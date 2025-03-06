@@ -1,7 +1,0 @@
-# Citation {.unnumbered}
-
-> I precursori del denaro, insieme al linguaggio, hanno permesso agli esseri umani moderni di affrontare problemi di cooperazione che altre specie animali non possono risolvere, tra cui le questioni legate all'altruismo reciproco, all'altruismo verso i familiari e alla mitigazione dell'aggressività. Questi precursori possedevano caratteristiche molto specifiche in comune con le valute non fiduciari: non si trattava semplicemente di oggetti simbolici o decorativi. [^7]
-> 
-> --- Nick Szabo
-
-[^7]: Nick Szabo, *Shelling Out: The Origins of Money*.

@@ -58,18 +58,26 @@ book:
     site: "@konsensusn"
   chapters:
     - index.qmd
-    - chapters/CH00.qmd
-    - part: "Che cos'è il denaro?"
-      chapters:
-      - chapters/p1-quote.qmd
-      - chapters/CH01.qmd
-      - chapters/CH02.qmd
-      - chapters/CH03.qmd
-      - chapters/CH04.qmd
+    - chapters/ch01_20250305_2120_o3-mini.qmd
+    - chapters/ch01_20250306_1219_o3-mini.qmd
+    - chapters/ch02_20250306_1220_o3-mini.qmd
+    - chapters/ch02_20250306_1253_o3-mini.qmd
+    - chapters/ch03_20250306_1222_o3-mini.qmd
+    - chapters/ch03_20250306_1256_o3-mini.qmd
+    - chapters/ch04_20250306_1238_o3-mini.qmd
+    - chapters/ch04_20250306_1304_o3-mini.qmd
+    - chapters/ch05_20250306_1243_o3-mini.qmd
+    - chapters/ch05_20250306_1308_o3-mini.qmd
+    - chapters/ch06_20250306_1249_o3-mini.qmd
+    - chapters/ch06_20250306_1348_o3-mini.qmd
+    - chapters/ch07_20250306_1349_o3-mini.qmd
+    - chapters/ch08_20250306_1356_o3-mini.qmd
+    - chapters/ch09_20250306_1401_o3-mini.qmd
+    - chapters/ch10_20250306_1407_o3-mini.qmd
 
 format:
   html:
-    lang: nl
+    lang: it
     theme:
       light: [flatly, theme.scss, theme-light.scss]
     number-depth: 2
@@ -82,7 +90,7 @@ format:
     toc-location: left
     reference-location: margin
   pdf:
-    lang: nl
+    lang: it
     documentclass: memoir
     classoption: smalldemyvopaper,10pt,twoside,onecolumn,openright,extrafontsizes,hidelinks
     papersize: a5
@@ -100,6 +108,12 @@ format:
     toc: true
     toc-depth: 1
     toc-title: Inhoudsopgave
-    lang: "nl-NL"
+    lang: "it-IT"
     css: epub.css
+    number-depth: 2
+  docx:
+    toc-depth: 1
+    toc-title: Inhoudsopgave
+    lang: "it-IT"
+    css: docx.css
     number-depth: 2
