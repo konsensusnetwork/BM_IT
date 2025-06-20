@@ -58,44 +58,56 @@ book:
     site: "@konsensusn"
   chapters:
     - index.qmd
-    - chapters/ch01_20250306_1219_o3-mini.qmd
-    - chapters/ch02_20250306_1253_o3-mini.qmd
-    - chapters/ch03_20250306_1256_o3-mini.qmd
-    - chapters/ch04_20250306_1304_o3-mini.qmd
-    - chapters/ch05_20250306_1308_o3-mini.qmd
-    - chapters/ch06_20250306_1348_o3-mini.qmd
-    - chapters/ch07_20250306_1349_o3-mini.qmd
-    - chapters/ch08_20250306_1356_o3-mini.qmd
-    - chapters/ch09_20250306_1401_o3-mini.qmd
-    - chapters/ch10_20250306_1407_o3-mini.qmd
-    - chapters/ch11_20250619_1005_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch12_20250619_1006_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch13_20250619_1012_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch14_20250619_1023_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch15_20250619_1043_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch16_20250619_1051_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch17_20250619_1122_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch18_20250619_1123_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch19_20250619_1130_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch20_20250619_1159_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch21_20250619_1220_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch22_20250619_1227_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch23_20250619_1233_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch24_20250619_1258_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch25_20250619_1311_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch26_20250619_1329_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch27_20250619_1338_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch28_20250619_1346_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch29_20250619_1406_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch30_20250619_1429_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch31_20250619_1441_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch32_20250619_1452_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch33_20250619_1453_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch34_20250619_1513_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch35_20250619_1522_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch36_20250619_1534_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch37_20250619_1628_gemini-2_5-pro-preview-06-05.qmd
-    - chapters/ch38_20250619_1634_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch01.qmd
+    - part: "Cos'è il denaro?"
+      chapters:
+        - chapters/ch02.qmd
+        - chapters/ch03.qmd
+        - chapters/ch04.qmd
+        - chapters/ch05.qmd
+        - chapters/ch06.qmd
+    - part: "La nascita delle banche"
+      chapters:
+        - chapters/ch07.qmd
+        - chapters/ch08.qmd
+        - chapters/ch09.qmd
+        - chapters/ch10.qmd
+        - chapters/ch11.qmd
+    - part: "Ascesa e caduta degli ordini monetari globali"
+      chapters:
+        - chapters/ch12.qmd
+        - chapters/ch13.qmd
+        - chapters/ch14.qmd
+        - chapters/ch15.qmd
+        - chapters/ch16.qmd
+        - chapters/ch17.qmd
+    - part: "L'entropia dei registri fiat"
+      chapters:
+        - chapters/ch18.qmd
+        - chapters/ch19.qmd
+        - chapters/ch20.qmd
+        - chapters/ch21.qmd
+        - chapters/ch22.qmd
+        - chapters/ch23.qmd
+        - chapters/ch24.qmd
+    - part: "Internetmoney"
+      chapters:
+        - chapters/ch25.qmd
+        - chapters/ch26.qmd
+        - chapters/ch27.qmd
+        - chapters/ch28.qmd
+        - chapters/ch29.qmd
+        - chapters/ch30.qmd
+        - chapters/ch31.qmd
+        - chapters/ch32.qmd
+    - part: "Tecnologia finanziaria e diritti umani"
+      chapters:
+        - chapters/ch33.qmd
+        - chapters/ch34.qmd
+        - chapters/ch35.qmd
+        - chapters/ch36.qmd
+    - chapters/ch37.qmd
+    - chapters/ch38.qmd
 
 format:
   html:
@@ -118,7 +130,7 @@ format:
     classoption: smalldemyvopaper,10pt,twoside,onecolumn,openright,extrafontsizes,hidelinks
     papersize: a5
     toc-depth: 1
-    toc-title: Inhoudsopgave
+    toc-title: Indice
     keep-tex: true
     colorlinks: false
     include-in-header:
@@ -130,7 +142,7 @@ format:
     creator: Konsensus Network
     toc: true
     toc-depth: 1
-    toc-title: Inhoudsopgave
+    toc-title: Indice
     lang: "it-IT"
     css: epub.css
     number-depth: 2

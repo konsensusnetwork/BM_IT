@@ -387,7 +387,7 @@
     \setSpacing{1.3}
     \includegraphics[width=\textwidth]{figures/circuitboard.png}
     \par\vspace{3\baselineskip} % Add reliable spacing after the image
-    {\LARGE\chapterfont Hoofdstuk \thechapter} 
+    {\LARGE\chapterfont Capitolo \thechapter} 
     \par\vspace{1\baselineskip} % Space before chapter number
     {\huge\sffamily\MakeUppercase{#1}} % Chapter title formatting
     \par\vspace{1\baselineskip} % Space after chapter number
@@ -502,7 +502,7 @@
 \frontmatter
 \maketitle
 
-\renewcommand*\contentsname{Inhoudsopgave}
+\renewcommand*\contentsname{Indice}
 {
 \setcounter{tocdepth}{0}
 \tableofcontents
@@ -518,7 +518,10 @@
 
 \bookmarksetup{startatroot}
 
-\chapter{Introduzione}\label{introduzione}
+\chapter*{Introduzione}\label{introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+
+\markboth{Introduzione}{Introduzione}
 
 A settembre 2022, un'ondata di persone comuni ha rapinato banche in
 Libano.
@@ -805,13 +808,12 @@ e future -- che tocca tutti questi temi e oltre, affinché possiamo
 comprendere meglio da dove veniamo e quali percorsi potremmo
 intraprendere in futuro.
 
-\section{Note a piè di pagina}\label{note-a-piuxe8-di-pagina}
+\part{Cos'è il denaro?}
 
-\bookmarksetup{startatroot}
+\chapter*{Part 1}\label{part-1}
+\addcontentsline{toc}{chapter}{Part 1}
 
-\chapter{}\label{section}
-
-\textbf{Cos'è il denaro?}
+\markboth{Part 1}{Part 1}
 
 ``I precursori del denaro, insieme al linguaggio, permisero agli esseri
 umani della prima età moderna di superare le problematiche cooperative
@@ -824,10 +826,8 @@ decorativi.''\footnote{Nick Szabo, \emph{Shelling Out: The Origins of
 
 -Nick Szabo
 
-\bookmarksetup{startatroot}
-
-\chapter{Capitolo 1: I registri come fondamento del
-denaro}\label{capitolo-1-i-registri-come-fondamento-del-denaro}
+\chapter{I registri come fondamento del
+denaro}\label{i-registri-come-fondamento-del-denaro}
 
 Molti pensano che il concetto di denaro nasca con l'introduzione delle
 monete o delle conchiglie, ma in realtà la storia comincia ben prima,
@@ -1339,11 +1339,8 @@ trasparenti fino a quando la tecnologia non evolve al punto da conferire
 a un gruppo un vantaggio sproporzionato, costringendo tutti gli altri a
 dover necessariamente adattarsi o a soccombere.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Chapter 2: \textbf{The Evolution of Commodities
-as
-Money}}{Chapter 2: The Evolution of Commodities as Money}}\label{chapter-2-the-evolution-of-commodities-as-money}
+\chapter{The Evolution of Commodities as
+Money}\label{the-evolution-of-commodities-as-money}
 
 Come illustrato nel capitolo precedente, gli esseri umani che vivono in
 piccoli gruppi di parentela o amicizia non hanno realmente bisogno di
@@ -1690,7 +1687,7 @@ funzionavano finché la tecnologia non ha imposto dei limiti tali da
 impossibilitarne il proseguimento. Le sezioni che seguono illustrano
 vari esempi a sostegno di questo concetto.
 
-\textbf{Shells}
+\section{Shells}\label{shells}
 
 Come già descritto, il denaro in conchiglie è stato utilizzato per
 lunghi periodi in varie regioni delle Americhe, dell'Africa e dell'Asia.
@@ -1729,7 +1726,7 @@ popolazioni indigene, che lo hanno restituito al suo significato
 cerimoniale e complesso come strumento per preservare la tradizione
 culturale.
 
-\textbf{Tobacco}
+\section{Tobacco}\label{tobacco}
 
 Nei primi anni del 1600, Virginia, Maryland e Carolina del Nord
 iniziarono a utilizzare il tabacco come denaro, includendolo persino tra
@@ -1788,7 +1785,7 @@ essere completamente abbandonato.\footnote{Farley Grubb, ``Colonial
   \emph{Exorbitant Privilege: The Rise and Fall of the Dollar and the
   Future of the International Monetary System}, 9--11.}
 
-\textbf{Cocoa}
+\section{Cocoa}\label{cocoa}
 
 In molte regioni dell'America centrale e meridionale le civiltà antiche
 impiegavano il cacao come moneta. Tale prassi era già consolidata al
@@ -1821,7 +1818,7 @@ impiegati come denaro; tuttavia, similmente ad altri contesti nel mondo,
 questa pratica fu gradualmente soppiantata da forme monetarie ancora più
 scarse.
 
-\textbf{Rai Stones}
+\section{Rai Stones}\label{rai-stones}
 
 Gli abitanti di un'isola del Sud Pacifico, Yap, utilizzavano enormi
 pietre come forma di moneta. Le cosiddette ``rai stones'' (o ``fei
@@ -1963,7 +1960,7 @@ gran parte delle pietre rimaneva immobile e solo le tradizioni orali (o,
 in un secondo momento, le marcature fisiche apportate dai tedeschi)
 indicavano a chi appartenessero.
 
-\textbf{Feathers}
+\section{Feathers}\label{feathers}
 
 Le piume venivano spesso utilizzate come oggetti dal valore simile al
 denaro da popolazioni tribali in tutto il mondo. Molte culture
@@ -1989,7 +1986,7 @@ natura, questa tipologia di valuta presenta limitazioni intrinseche in
 termini di fungibilità e liquidità, confinandosi a una giurisdizione
 culturalmente e geograficamente ristretta.
 
-\textbf{African Beads}
+\section{African Beads}\label{african-beads}
 
 Le perline da scambio furono impiegate come denaro in alcune zone
 dell'Africa occidentale per molti secoli, risalendo almeno al XIV secolo
@@ -2057,7 +2054,7 @@ perline commerciali non riuscirono a mantenere il loro elevato rapporto
 stock-to-flow di fronte al progresso tecnologico e, pertanto, furono
 progressivamente sostituite come mezzo di pagamento.
 
-\textbf{Japanese Invasion Money}
+\section{Japanese Invasion Money}\label{japanese-invasion-money}
 
 Sebbene non si tratti propriamente di una moneta-commodità, l'Impero
 giapponese impiegò una valuta debole per acquisire i beni e i servizi
@@ -2080,7 +2077,7 @@ persone continuano a risparmiare nella valuta fiat locale, la quale, a
 ogni generazione o giù di lì, viene drasticamente svalutata, portando i
 loro risparmi a finire nelle mani dei governanti e della classe agiata.
 
-\textbf{Grain}
+\section{Grain}\label{grain}
 
 Nell'antica Babilonia lo shekel d'argento costituiva l'unità monetaria
 principale, sebbene il grano venisse usato altrettanto frequentemente
@@ -2152,7 +2149,7 @@ eventuali squilibri strutturali che emergessero durante il loro regno,
 mentre i templi fungevano da centri amministrativi all'interno dei quali
 si svolgeva il commercio formalizzato.
 
-\textbf{Video Game Money}
+\section{Video Game Money}\label{video-game-money}
 
 Uno degli sviluppi più affascinanti dei giochi online multiplayer di
 massa è che essi danno origine a numerosi esperimenti economici non
@@ -2301,10 +2298,8 @@ che le condizioni evolvono.
 
 \section{Footnotes}\label{footnotes}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Chapter 3: \textbf{How Gold Won the Commodity
-War}}{Chapter 3: How Gold Won the Commodity War}}\label{chapter-3-how-gold-won-the-commodity-war}
+\chapter{How Gold Won the Commodity
+War}\label{how-gold-won-the-commodity-war}
 
 In ogni società che adotta una forma di denaro merce, i capitoli
 precedenti hanno evidenziato come sia la natura a regolamentare il
@@ -2400,7 +2395,7 @@ possedevano le capacità tecnologiche necessarie per svalutare gli altri
 strumenti monetari, mentre chi possedeva conchiglie, perle, bestiame,
 sale, tessuti o metalli inferiori non riusciva a far altrettanto.
 
-\textbf{Precious Metal Coinage}
+\section{Precious Metal Coinage}\label{precious-metal-coinage}
 
 Le autorità hanno ulteriormente rafforzato il ruolo dell'oro e
 dell'argento come denaro introducendo unità standardizzate, solitamente
@@ -2634,12 +2629,8 @@ gioielli -- rimane una delle modalità migliori a disposizione degli
 individui per conservare valore in forma d'asset portante, denso,
 liquido e fungibile, senza incorrere nel rischio di controparte.
 
-\section{Footnotes}\label{footnotes-1}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 4: \textbf{Una teoria unificata del
-denaro}}{Capitolo 4: Una teoria unificata del denaro}}\label{capitolo-4-una-teoria-unificata-del-denaro}
+\chapter{Una teoria unificata del
+denaro}\label{una-teoria-unificata-del-denaro}
 
 Le definizioni e le origini del denaro sono tradizionalmente inquadrate
 in due grandi filoni economici, ognuno con propri sottogruppi
@@ -2747,7 +2738,8 @@ definizione e delle origini della moneta a un livello fondamentale.
 Confrontando queste diverse linee di ragionamento, possiamo definire la
 moneta nella maniera più ampia e precisa possibile.
 
-\textbf{Setting the Timelines Straight}
+\section{Setting the Timelines
+Straight}\label{setting-the-timelines-straight}
 
 Per riconciliare queste due teorie contrastanti sulla moneta e
 individuare il fondamento comune, occorre iniziare esaminando le loro
@@ -2972,7 +2964,8 @@ perle di conchiglia, usate come forme proto-moneta, il che indica che
 diverse forme di denaro -- sia a credito che merci -- esistevano ben
 prima dell'avvento di una marcata specializzazione del lavoro.
 
-\textbf{Where the Credit Theory of Money Goes Wrong}
+\section{Where the Credit Theory of Money Goes
+Wrong}\label{where-the-credit-theory-of-money-goes-wrong}
 
 I sostenitori della teoria creditizia del denaro hanno ragione nel
 riesaminare l'evidenza antropologica sul concetto di credito e nel
@@ -3246,7 +3239,7 @@ insolvenze o svalutazioni, mentre i metalli preziosi, mantenendosi
 scarni e desiderabili, vengono scelti come mezzo di scambio e come
 deposito di valore preferito.
 
-\textbf{A Unified Theory of Money}
+\section{A Unified Theory of Money}\label{a-unified-theory-of-money}
 
 Invece di aderire in maniera esclusiva alla teoria della moneta-merce o
 a quella del credito, una teoria più completa deve individuare il
@@ -3325,11 +3318,12 @@ interdisciplinare del debito, in cui vengono messi in luce gli aspetti
 sociali, filosofici e storici che ne determinano il ruolo nelle società
 contemporanee, come riportato a pagina 215 {[}\^{}81{]}.
 
-\bookmarksetup{startatroot}
+\part{La nascita delle banche}
 
-\chapter{Part 2}\label{part-2}
+\chapter*{Part 2}\label{part-2}
+\addcontentsline{toc}{chapter}{Part 2}
 
-\textbf{La nascita delle banche}
+\markboth{Part 2}{Part 2}
 
 \emph{``Lo scopo fondamentale del commercio consiste nell'accumulare
 crediti. Il banchiere è colui che centralizza i debiti dell'umanità e li
@@ -3339,12 +3333,8 @@ camere di compensazione del commercio.''}\footnote{Mitchell-Innes,
 
 -Alfred Mitchell-Innes
 
-\section{Note a piè di pagina}\label{note-a-piuxe8-di-pagina-1}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 5: \textbf{Proto-Banking e il Sistema
-Hawala}}{Capitolo 5: Proto-Banking e il Sistema Hawala}}\label{capitolo-5-proto-banking-e-il-sistema-hawala}
+\chapter{Proto-Banking e il Sistema
+Hawala}\label{proto-banking-e-il-sistema-hawala}
 
 Gli istituti bancari nella forma in cui li conosciamo oggi ebbero
 origine nelle città-stato italiane all'alba del Rinascimento, ma la
@@ -3624,12 +3614,8 @@ specifici. Gli utenti della rete devono affidarsi al corretto
 funzionamento di ogni singolo hawaladar, e questi, a loro volta, devono
 riporre fiducia gli uni negli altri.
 
-\section{Footnotes}\label{footnotes-2}
-
-\bookmarksetup{startatroot}
-
-\chapter{Capitolo 6: L'innovazione della contabilità a partita
-doppia}\label{capitolo-6-linnovazione-della-contabilituxe0-a-partita-doppia}
+\chapter{L'innovazione della contabilità a partita
+doppia}\label{linnovazione-della-contabilituxe0-a-partita-doppia}
 
 Nel 1494, Luca Pacioli d'Italia scrisse \emph{Summa de arithmetica},
 un'opera in cui, tra le altre cose, forniva una descrizione dettagliata
@@ -3780,7 +3766,8 @@ logistico risultassero poco efficienti per il creditore, che era
 costretto a custodire numerosi bastoncini individuali.\footnote{Martin
   Slater, \emph{The National Debt: A Short History}, 15--44.}
 
-\textbf{Una tendenza verso il sistema di riserva frazionaria}
+\section{Una tendenza verso il sistema di riserva
+frazionaria}\label{una-tendenza-verso-il-sistema-di-riserva-frazionaria}
 
 Il modello bancario più elementare si configura come un custode al 100\%
 garantito dagli asset. Le persone depositano oro o altri beni monetari,
@@ -4024,12 +4011,8 @@ consegnate al sistema bancario, il controllo del denaro passa
 inevitabilmente a una gerarchia di intermediari, con cui si stabilisce
 un affidamento crescente sul loro operato.
 
-\section{Footnotes}\label{footnotes-3}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 7: \textbf{Free Banking vs Central
-Banking}}{Capitolo 7: Free Banking vs Central Banking}}\label{capitolo-7-free-banking-vs-central-banking}
+\chapter{Free Banking vs Central
+Banking}\label{free-banking-vs-central-banking}
 
 Nel corso dei secoli si sono sperimentati diversi modelli bancari. Nel
 contesto di questo capitolo, è possibile classificare i sistemi bancari
@@ -4195,7 +4178,8 @@ registro dei depositi e delle riserve sottostanti su scala nazionale.
 L'unico controllo diretto che gli individui mantengono riguarda la parte
 di denaro da essi posseduta sotto forma di monete in metallo prezioso.
 
-\textbf{A Brisk Walk Through American Monetary History}
+\section{A Brisk Walk Through American Monetary
+History}\label{a-brisk-walk-through-american-monetary-history}
 
 Nel corso del tempo, i sistemi bancari hanno progressivamente tenduto
 verso una maggiore centralizzazione. Questo fenomeno si è verificato in
@@ -4540,13 +4524,8 @@ raggiungimento dei propri obiettivi. Inoltre, i governi possono
 monitorare e verificare con maggiore facilità le finanze di ciascun
 individuo.
 
-\section{Footnotes}\label{footnotes-4}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 8: \textbf{Velocità delle transazioni
-e dei
-regolamenti}}{Capitolo 8: Velocità delle transazioni e dei regolamenti}}\label{capitolo-8-velocituxe0-delle-transazioni-e-dei-regolamenti}
+\chapter{Velocità delle transazioni e dei
+regolamenti}\label{velocituxe0-delle-transazioni-e-dei-regolamenti}
 
 Dalle cambiali su papiro alla contabilità in partita doppia e alle
 banconote cartacee, la funzione principale delle banche è sempre stata
@@ -5107,11 +5086,12 @@ lungo periodo, sarebbe sviluppare un sistema in cui un bene monetario al
 portatore, scarso e ampiamente accettato, possa esso stesso regolare
 transazioni a lunga distanza alla velocità della luce.
 
-\bookmarksetup{startatroot}
+\part{Ascesa e caduta degli ordini monetari globali}
 
-\chapter{Parte 3**}\label{parte-3}
+\chapter*{Parte 3}\label{parte-3}
+\addcontentsline{toc}{chapter}{Parte 3}
 
-\textbf{Ascesa e caduta degli ordini monetari globali}
+\markboth{Parte 3}{Parte 3}
 
 ``\emph{Con un processo continuo d'inflazione, i governi possono
 confiscare, in modo segreto e inosservato, una parte importante della
@@ -5122,10 +5102,8 @@ molti, di fatto ne arricchisce alcuni.}''\footnote{John Maynard Keynes,
 
 -John Maynard Keynes
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 9: \textbf{Stampare moneta per la
-guerra}}{Capitolo 9: Stampare moneta per la guerra}}\label{capitolo-9-stampare-moneta-per-la-guerra}
+\chapter{Stampare moneta per la
+guerra}\label{stampare-moneta-per-la-guerra}
 
 La prima guerra mondiale iniziò come un qualsiasi conflitto regionale,
 ma si espanse rapidamente trasformandosi in una guerra globale di
@@ -5441,10 +5419,7 @@ potere da chi \emph{usa} il libro mastro a chi lo \emph{controlla}.
 
 \section{Note}\label{note}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 10: \textbf{Il sistema di Bretton
-Woods}}{Capitolo 10: Il sistema di Bretton Woods}}\label{capitolo-10-il-sistema-di-bretton-woods}
+\chapter{Il sistema di Bretton Woods}\label{il-sistema-di-bretton-woods}
 
 Dopo la prima guerra mondiale, diversi paesi, tra cui la Germania e la
 Russia, conobbero una vera e propria iperinflazione. Altri stati che
@@ -5638,7 +5613,7 @@ ormai incamminate verso una netta vittoria, i rappresentanti di 44 paesi
 si riunirono a Bretton Woods, nel New Hampshire, per definire
 l'architettura del sistema monetario del dopoguerra.
 
-\textbf{Due visioni concorrenti}
+\section{Due visioni concorrenti}\label{due-visioni-concorrenti}
 
 Un ordine monetario globale, in sostanza, descrive le modalità con cui
 viene regolato il commercio tra paesi che non si fidano necessariamente
@@ -5754,7 +5729,8 @@ sistema entrò a pieno regime dopo il 1958, con l'eliminazione dei
 controlli valutari sulle transazioni di conto corrente.\footnote{Robert
   Hetzel, `Launch of the Bretton Woods System'.}
 
-\textbf{Eurodollari e il fallimento di Bretton Woods}
+\section{Eurodollari e il fallimento di Bretton
+Woods}\label{eurodollari-e-il-fallimento-di-bretton-woods}
 
 In un sistema di \emph{free banking}, in cui sono le singole banche, e
 non lo stato, a emettere valuta garantita dall'oro, la quantità di
@@ -5917,10 +5893,7 @@ Figura 10-A\footnote{Green, `Central Bank Gold Reserve', 17--19; World
 
 \section{Note}\label{note-1}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 11: \textbf{L'ascesa del
-petrodollaro}}{Capitolo 11: L'ascesa del petrodollaro}}\label{capitolo-11-lascesa-del-petrodollaro}
+\chapter{L'ascesa del petrodollaro}\label{lascesa-del-petrodollaro}
 
 Dopo la fine del sistema di Bretton Woods nel 1971, il mondo si trovò in
 una situazione senza precedenti: la moneta usata da quasi tutto il mondo
@@ -6266,14 +6239,11 @@ o euro presso banche offshore e paradisi fiscali, invece di
 assoggettarsi alla continua svalutazione monetaria che i propri
 cittadini subiscono quotidianamente.
 
-\textbf{Una storia di transizioni monetarie}
+\section{Una storia di transizioni
+monetarie}\label{una-storia-di-transizioni-monetarie}
 
-\section{Note}\label{note-2}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 12: \textbf{Relegare il caos alla
-periferia}}{Capitolo 12: Relegare il caos alla periferia}}\label{capitolo-12-relegare-il-caos-alla-periferia}
+\chapter{Relegare il caos alla
+periferia}\label{relegare-il-caos-alla-periferia}
 
 Per diversi secoli e fino alla prima metà del XX, gran parte del mondo
 ha vissuto sotto il colonialismo europeo. Spagna, Francia, Regno Unito e
@@ -6431,7 +6401,7 @@ gestione di un sistema a due valute, come quella richiesta ai leader dei
 paesi in via di sviluppo, è intrinsecamente più complessa di quella di
 un sistema a moneta unica, tipica dei paesi ricchi.
 
-\textbf{L'FMI e la banca mondiale}
+\section{L'FMI e la banca mondiale}\label{lfmi-e-la-banca-mondiale}
 
 Quando i paesi in via di sviluppo affrontano crisi valutarie e vanno in
 default, il fondo monetario internazionale piomba con offerte di
@@ -6724,11 +6694,8 @@ in dollari, e la soluzione tipica consiste nell'aiutarli a contrarre
 ancora più debito in dollari, mantenendoli in questo circolo vizioso
 senza fine.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 13: \textbf{Pesante è il capo che
-cinge la
-corona}}{Capitolo 13: Pesante è il capo che cinge la corona}}\label{capitolo-13-pesante-uxe8-il-capo-che-cinge-la-corona}
+\chapter{Pesante è il capo che cinge la
+corona}\label{pesante-uxe8-il-capo-che-cinge-la-corona}
 
 La \emph{spada di Damocle} è una parabola del quarto secolo a.C.,
 divulgata da Cicerone, che ha per protagonisti un cortigiano di nome
@@ -6838,7 +6805,8 @@ detenere una quota maggiore di oro, immobili, obbligazioni e capitale di
 rischio di tali nazioni, e di conseguenza i residenti del paese perdono
 il valore dei flussi di reddito che queste attività potrebbero generare.
 
-\textbf{La correzione di uno squilibrio della bilancia dei pagamenti}
+\section{La correzione di uno squilibrio della bilancia dei
+pagamenti}\label{la-correzione-di-uno-squilibrio-della-bilancia-dei-pagamenti}
 
 Quando un paese registra un disavanzo commerciale ampio e persistente,
 dovuto a un divario tra consumi e produzione, significa che la sua
@@ -7225,7 +7193,8 @@ per gli Stati Uniti. Il rischio sorge quando non si riconosce questa
 realtà, e di conseguenza non si attuano cambiamenti proattivi da una
 posizione di forza. E finora, è questa la strada che abbiamo scelto.
 
-\textbf{La fallita guerra al terrore}
+\section{La fallita guerra al
+terrore}\label{la-fallita-guerra-al-terrore}
 
 In risposta agli attacchi terroristici dell'11 settembre, gli Stati
 Uniti hanno dichiarato guerra. Le operazioni militari si sono
@@ -7371,7 +7340,8 @@ di un debito così ingente e delle relative spese per interessi. I
 maggiori beneficiari della guerra sono state le multinazionali
 statunitensi che producono armamenti e forniture per l'esercito.
 
-\textbf{Come la cina ha sovvertito il sistema attuale}
+\section{Come la cina ha sovvertito il sistema
+attuale}\label{come-la-cina-ha-sovvertito-il-sistema-attuale}
 
 Per tutti gli anni settanta, ottanta, novanta e duemila, i partner
 commerciali che accumulavano ingenti surplus commerciali con gli Stati
@@ -7464,7 +7434,7 @@ Stati Uniti si trovano a dover finanziare da soli i propri disavanzi di
 bilancio, dato che gran parte del mondo sta rallentando o addirittura
 interrompendo l'accumulo di titoli del tesoro statunitensi.
 
-\textbf{Verso un mondo multipolare}
+\section{Verso un mondo multipolare}\label{verso-un-mondo-multipolare}
 
 Così come il sistema di Bretton Woods divenne a un certo punto
 insostenibile per aver prosciugato le riserve auree statunitensi, il
@@ -7557,11 +7527,12 @@ vendere petrolio, gas e altre materie prime alla Cina in yuan cinesi.
 Diversi altri paesi hanno diversificato in maniera analoga i propri
 metodi di pagamento e di risparmio.
 
-\bookmarksetup{startatroot}
+\part{L'entropia dei registri fiat}
 
-\chapter{Parte 4}\label{parte-4}
+\chapter*{Parte 4}\label{parte-4}
+\addcontentsline{toc}{chapter}{Parte 4}
 
-\textbf{L'entropia dei registri fiat}
+\markboth{Parte 4}{Parte 4}
 
 ``\emph{Nessuna struttura, nemmeno una artificiale, gradisce il processo
 di entropia. È il destino ultimo di ogni cosa, e ogni cosa vi
@@ -7569,10 +7540,8 @@ resiste.}''\footnote{Philip Dick, \emph{Galactic Pot-Healer}, 101.}
 
 -Philip K. Dick
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 14: \textbf{Il sistema finanziario
-moderno}}{Capitolo 14: Il sistema finanziario moderno}}\label{capitolo-14-il-sistema-finanziario-moderno}
+\chapter{Il sistema finanziario
+moderno}\label{il-sistema-finanziario-moderno}
 
 In questa parte del libro si analizzano i meccanismi del sistema
 finanziario moderno. Vedremo come funziona, come viene creata e
@@ -7594,7 +7563,8 @@ manifesta in modo esplosivo e quasi tutta insieme.
 Ma, prima di addentrarci in questi argomenti, è necessario partire dalle
 fondamenta e procedere passo dopo passo.
 
-\textbf{Il sistema della Federal Reserve: le basi}
+\section{Il sistema della Federal Reserve: le
+basi}\label{il-sistema-della-federal-reserve-le-basi}
 
 Il sistema finanziario è costituito da una serie di registri contabili
 incassati l'uno nell'altro. In altre parole, è una serie di registri
@@ -7645,7 +7615,8 @@ del settore privato la minoranza (cinque).\footnote{Consiglio dei
   governatori del Federal Reserve System, \emph{Federal Market Open
   Committee}.}
 
-\textbf{Una piramide di promesse di pagamento}
+\section{Una piramide di promesse di
+pagamento}\label{una-piramide-di-promesse-di-pagamento}
 
 Nell'attivo di una tipica banca commerciale privata troviamo
 principalmente prestiti, titoli e liquidità. Un mutuo, ad esempio, è una
@@ -7740,7 +7711,7 @@ sull'oro, tutto era sostenuto in ultima istanza da un'attività non
 vincolata, mentre nel sistema attuale tutto poggia sui titoli di stato,
 che sono a loro volta delle passività.
 
-\textbf{Fedwire}
+\section{Fedwire}\label{fedwire}
 
 Quando persone e aziende si scambiano denaro tramite i loro conti
 correnti, le rispettive banche devono comunicare tra loro e regolare i
@@ -7815,7 +7786,8 @@ privati e aziende sui livelli contabili superiori del sistema vengono
 liquidate tramite questi sistemi al livello di base del sistema o in sua
 prossimità.
 
-\textbf{I collegamenti internazionali}
+\section{I collegamenti
+internazionali}\label{i-collegamenti-internazionali}
 
 Altri paesi presentano sistemi finanziari con una struttura simile.
 L'elemento che li accomuna è di solito la presenza di una banca centrale
@@ -7887,11 +7859,8 @@ pagamenti di importo minore, ma la commissione media internazionale per
 l'invio di rimesse supera il 6\%.\footnote{Banca Mondiale, `Remittance
   Prices Worldwide Quarterly', 7.}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 15: \textbf{Come viene creata e
-distrutta la valuta
-fiat}}{Capitolo 15: Come viene creata e distrutta la valuta fiat}}\label{capitolo-15-come-viene-creata-e-distrutta-la-valuta-fiat}
+\chapter{Come viene creata e distrutta la valuta
+fiat}\label{come-viene-creata-e-distrutta-la-valuta-fiat}
 
 Anche se produrre valuta fiat non ha un costo significativo, la sua
 creazione e distruzione sono regolate da meccanismi e norme precise.
@@ -7914,7 +7883,7 @@ analizza questi due tipi di moneta e i meccanismi specifici della loro
 creazione e distruzione. L'analisi si concentra sul sistema
 statunitense, ma gli stessi principi si applicano quasi ovunque.
 
-\textbf{Moneta di base}
+\section{Moneta di base}\label{moneta-di-base}
 
 La base monetaria, o `moneta di base', è il fondamento del sistema di
 valuta fiat. Consiste nella somma di: 1) valuta fisica in circolazione e
@@ -7986,7 +7955,7 @@ dispone di alcuni strumenti per creare o distruggere nuove riserve
 bancarie e, di conseguenza, aumentare o ridurre l'ammontare della base
 monetaria.
 
-\textbf{Moneta in senso ampio}
+\section{Moneta in senso ampio}\label{moneta-in-senso-ampio}
 
 L'aggregato monetario ampio è molto più grande della base monetaria e
 rappresenta la moneta detenuta dal pubblico. Questo calcolo è costituito
@@ -8052,7 +8021,8 @@ del sistema, mentre il sistema bancario commerciale amministra
 l'aggregato monetario più ampio, che rappresenta un credito indiretto e
 con riserva frazionaria verso questa base monetaria.
 
-\textbf{Il rapporto tra moneta in senso ampio e base monetaria}
+\section{Il rapporto tra moneta in senso ampio e base
+monetaria}\label{il-rapporto-tra-moneta-in-senso-ampio-e-base-monetaria}
 
 Sebbene la Federal Reserve determini l'ammontare della base monetaria
 statunitense, inclusa la percentuale che può esistere in forma di
@@ -8198,7 +8168,8 @@ quella della FDIC, possono in teoria ridurre l'aggregato monetario
 esteso; un evento che si è verificato all'inizio degli anni '30 ma che
 da allora è stato evitato.
 
-\textbf{Esempi di contabilità delle riserve bancarie}
+\section{Esempi di contabilità delle riserve
+bancarie}\label{esempi-di-contabilituxe0-delle-riserve-bancarie}
 
 La parte restante di questo capitolo approfondisce i meccanismi di
 creazione della base monetaria e dell'aggregato monetario esteso.
@@ -8281,7 +8252,8 @@ Un blocco di prestito bancario `L' o un blocco di mutuo `M' è
 un'attività per la banca che l'ha erogato e una passività per il cliente
 che l'ha contratto con la sua banca.
 
-\textbf{Esempio 1: una banca concede un prestito}
+\section{Esempio 1: una banca concede un
+prestito}\label{esempio-1-una-banca-concede-un-prestito}
 
 Questo è l'esempio più semplice per mostrare come le banche creano
 depositi e moneta in senso ampio, senza ridurre le riserve all'interno
@@ -8419,7 +8391,8 @@ il numero di depositi generati da tali riserve, a seconda del livello di
 rischio che intendono assumersi e del numero di opportunità di prestito
 a clienti affidabili che individuano.
 
-\textbf{Esempio 2: La Federal Reserve esegue un QE con le banche}
+\section{Esempio 2: La Federal Reserve esegue un QE con le
+banche}\label{esempio-2-la-federal-reserve-esegue-un-qe-con-le-banche}
 
 Il prossimo esempio è più realistico e presenta un sistema bancario con
 una leva finanziaria maggiore. In questo caso, la Federal Reserve
@@ -8530,8 +8503,8 @@ di più denaro in deposito rispetto a prima, quindi non c'è motivo di
 assistere a una spinta inflazionistica. L'ammontare dei depositi dei
 consumatori nel sistema è rimasto invariato.
 
-\textbf{Esempio 3: La Federal Reserve attua il QE tramite soggetti non
-bancari}
+\section{Esempio 3: La Federal Reserve attua il QE tramite soggetti non
+bancari}\label{esempio-3-la-federal-reserve-attua-il-qe-tramite-soggetti-non-bancari}
 
 Questo terzo esempio riparte da un sistema più semplice, molto simile a
 quello dell'esempio 1. Tuttavia, invece di un'automobile come asset
@@ -8647,7 +8620,8 @@ propensa ad acquistare azioni, altri buoni del Tesoro e così via. È una
 risparmiatrice, e questo potrebbe non indurla a spendere di più, ma
 potrebbe modificare il modo in cui investe la sua liquidità aggiuntiva.
 
-\textbf{Esempio 4: helicopter money finanziato da soggetti non bancari}
+\section{Esempio 4: helicopter money finanziato da soggetti non
+bancari}\label{esempio-4-helicopter-money-finanziato-da-soggetti-non-bancari}
 
 I primi tre esempi erano casi a sé stanti, ciascuno pensato per
 illustrare uno scenario diverso.
@@ -8769,7 +8743,8 @@ dei depositi e delle riserve è rimasto invariato nel sistema tra la
 situazione iniziale e quella finale. Depositi e riserve sono stati
 soltanto ricollocati all'interno del sistema.
 
-\textbf{Esempio 5: Helicopter money finanziato dalla Fed}
+\section{Esempio 5: Helicopter money finanziato dalla
+Fed}\label{esempio-5-helicopter-money-finanziato-dalla-fed}
 
 L'esempio 5 riparte esattamente dal punto in cui si era concluso
 l'esempio 4, sviluppandolo ulteriormente.
@@ -8875,7 +8850,7 @@ possedendo molti asset, è più incline di prima a usare una parte dei
 suoi depositi per acquistare azioni, immobili, oro, bitcoin o oggetti da
 collezione, facendone lievitare i prezzi.
 
-!\textbf{Esempio 6: denaro dall'elicottero con finanziamento bancario}
+!\#\# Esempio 6: denaro dall'elicottero con finanziamento bancario
 
 L'esempio 6 riprende esattamente da dove si era interrotto il quinto:
 Mary e Sara sono entrambe felici perché hanno ricevuto una seconda
@@ -8974,7 +8949,8 @@ soldi, il risultato potrebbe essere una grande quantità di denaro a
 caccia di beni e servizi limitati, cosa che potrebbe spingere al rialzo
 i prezzi al consumo e generare inflazione.
 
-\textbf{Conclusioni riassuntive da questi esempi}
+\section{Conclusioni riassuntive da questi
+esempi}\label{conclusioni-riassuntive-da-questi-esempi}
 
 Se analizziamo questi sei esempi di come il denaro viene realmente
 `stampato' in un sistema di valuta fiat, possiamo fare diverse
@@ -9103,11 +9079,8 @@ osservazioni:
   dall'inflazione dei prezzi che rischia di generare.
 \end{itemize}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 16: \textbf{Il prezzo come meccanismo
-di
-organizzazione}}{Capitolo 16: Il prezzo come meccanismo di organizzazione}}\label{capitolo-16-il-prezzo-come-meccanismo-di-organizzazione}
+\chapter{Il prezzo come meccanismo di
+organizzazione}\label{il-prezzo-come-meccanismo-di-organizzazione}
 
 Per analizzare un sistema monetario, bisogna considerare la prospettiva
 di chi emette la moneta e di chi la utilizza; questi due gruppi hanno
@@ -9318,7 +9291,8 @@ paesi di tutto il mondo, che ci piaccia o no. Ci troviamo in una
 condizione inevitabile, almeno finché non svilupperemo e adotteremo un
 sistema contabile migliore.
 
-\textbf{Stabilità dei prezzi contro segnali di coordinamento}
+\section{Stabilità dei prezzi contro segnali di
+coordinamento}\label{stabilituxe0-dei-prezzi-contro-segnali-di-coordinamento}
 
 L'obiettivo principale della maggior parte dei banchieri centrali è la
 stabilità dei prezzi. Sono disposti a espandere o contrarre rapidamente
@@ -9513,7 +9487,8 @@ la manipolazione dei prezzi. Queste soluzioni richiedono la lungimiranza
 necessaria per creare e mantenere delle riserve durante i periodi
 favorevoli.
 
-\textbf{Il prezzo del denaro e uno strumento di misura affidabile}
+\section{Il prezzo del denaro e uno strumento di misura
+affidabile}\label{il-prezzo-del-denaro-e-uno-strumento-di-misura-affidabile}
 
 Possiamo estendere il concetto dei prezzi come meccanismo di
 coordinamento al prezzo del denaro stesso, che è controllato dalle
@@ -9714,7 +9689,8 @@ valuta fiat centralizzati, per l'emittente centrale è facile modificarne
 l'offerta e il valore delle unità, il che può alterare i segnali di
 prezzo e le attività economiche.
 
-\textbf{La `necessità' di un'inflazione costante dei prezzi}
+\section{La `necessità' di un'inflazione costante dei
+prezzi}\label{la-necessituxe0-di-uninflazione-costante-dei-prezzi}
 
 Nel 2013, James Bullard (presidente della Federal Reserve Bank di
 St.~Louis, una delle dodici banche regionali della Federal Reserve)
@@ -10098,11 +10074,8 @@ senza che quest'ultima possa facilmente rendersene conto. E per quanto
 la situazione sia grave per i risparmiatori dei paesi sviluppati, è di
 gran lunga peggiore per quelli dei paesi in via di sviluppo.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 17: \textbf{La finanziarizzazione di
-ogni
-cosa}}{Capitolo 17: La finanziarizzazione di ogni cosa}}\label{capitolo-17-la-finanziarizzazione-di-ogni-cosa}
+\chapter{La finanziarizzazione di ogni
+cosa}\label{la-finanziarizzazione-di-ogni-cosa}
 
 Quando la moneta di una società conserva bene il proprio valore nel
 tempo, si è incentivati a usarla per conservare la ricchezza. I
@@ -10255,7 +10228,8 @@ consumatori e investitori ciò che è scarso e ciò che non lo è, il che
 può portare a un'allocazione errata delle risorse per periodi
 prolungati.
 
-\textbf{La diluizione occulta dell'offerta}
+\section{La diluizione occulta
+dell'offerta}\label{la-diluizione-occulta-dellofferta}
 
 Chiunque possieda un bene la cui offerta è flessibile deve guardarsi
 costantemente dal rischio di diluizione.
@@ -10453,10 +10427,8 @@ stabilità attentamente gestita di questo tipo di sistema a condurlo,
 alla fine, a una drammatica instabilità e all'incapacità di resistere ai
 periodi di deflazione.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 18: \textbf{I beneficiari dell'effetto
-Cantillon}}{Capitolo 18: I beneficiari dell'effetto Cantillon}}\label{capitolo-18-i-beneficiari-delleffetto-cantillon}
+\chapter{I beneficiari dell'effetto
+Cantillon}\label{i-beneficiari-delleffetto-cantillon}
 
 Che si sia a favore o contro, nel dibattito pubblico ci si concentra
 spesso sui meccanismi di distribuzione della ricchezza imposti dall'alto
@@ -10831,13 +10803,8 @@ favorevoli, e in fondo alla lista ci sono i membri della classe
 lavoratrice o le persone in condizioni di povertà, che raramente hanno
 accesso a finanziamenti a buon mercato.
 
-\section{Note a piè di pagina}\label{note-a-piuxe8-di-pagina-2}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 19: \textbf{Il ciclo del debito di
-lungo
-periodo}}{Capitolo 19: Il ciclo del debito di lungo periodo}}\label{capitolo-19-il-ciclo-del-debito-di-lungo-periodo}
+\chapter{Il ciclo del debito di lungo
+periodo}\label{il-ciclo-del-debito-di-lungo-periodo}
 
 Esiste un ciclo antico quanto la civiltà, che pulsa al cuore della
 politica e dell'economia: è il ciclo dell'accumulazione esponenziale del
@@ -11088,7 +11055,8 @@ funzionanti le strutture di incentivi esistenti. Altre non ci riescono,
 e l'incapacità di trovare un simile compromesso porta spesso a
 conseguenze ben più cupe, come la rivoluzione russa del 1917.
 
-\textbf{Cicli economici a breve termine nelle valute fiat}
+\section{Cicli economici a breve termine nelle valute
+fiat}\label{cicli-economici-a-breve-termine-nelle-valute-fiat}
 
 La maggior parte dei lettori di questo libro conoscerà bene le
 fluttuazioni cicliche dell'economia moderna, già trattate nei capitoli
@@ -11261,7 +11229,8 @@ addirittura leggermente negativi) e i responsabili politici non
 esauriscono gli strumenti per incoraggiare un'ulteriore crescita del
 credito. A quel punto, accade qualcosa di diverso e di portata maggiore.
 
-\textbf{Cicli di debito a lungo termine della valuta fiat}
+\section{Cicli di debito a lungo termine della valuta
+fiat}\label{cicli-di-debito-a-lungo-termine-della-valuta-fiat}
 
 Nel 2008 le banche degli Stati Uniti hanno iniziato a crollare e
 l'intero sistema finanziario ha cominciato a sgretolarsi fin dalle
@@ -11417,7 +11386,7 @@ momento culminante di un'intera stagione di una serie tv, mentre quelli
 di un normale ciclo economico sono come i singoli episodi di quella
 stagione.
 
-\textbf{Un uno-due}
+\section{Un uno-due}\label{un-uno-due}
 
 Molti pensavano che il rapido aumento della base monetaria durante la
 crisi del 2008 avrebbe provocato iperinflazione e segnato `la fine del
@@ -11632,7 +11601,7 @@ seguita una guerra per procura tra i paesi della NATO e la Russia, che
 ha provocato ulteriori interruzioni nelle catene di approvvigionamento,
 una parziale deglobalizzazione e un aumento della spesa militare.
 
-\textbf{Una spirale fiscale}
+\section{Una spirale fiscale}\label{una-spirale-fiscale}
 
 Quando una rapida crescita della massa monetaria in senso ampio e
 dell'inflazione dei prezzi al consumo sono causate da un'espansione
@@ -11855,9 +11824,10 @@ pubblico è sempre stato un problema del politico successivo eppure ora,
 nelle fasi finali di un ciclo del debito a lungo termine, stiamo
 arrivando al punto in cui i problemi si manifestano nel presente.
 
-\textbf{Parte 5}
+\section{Parte 5}\label{parte-5}
 
-\textbf{Una moneta nativa di internet}
+\section{Una moneta nativa di
+internet}\label{una-moneta-nativa-di-internet}
 
 \emph{«Una versione puramente peer-to-peer di denaro elettronico
 permetterebbe di inviare pagamenti online direttamente da un soggetto
@@ -11870,13 +11840,12 @@ doppia spesa tramite una rete peer-to-peer.»}\footnote{Satoshi Nakamoto,
 
 -Satoshi Nakamoto
 
-\section{Note}\label{note-3}
+\section{Note}\label{note-2}
 
-\bookmarksetup{startatroot}
+\part{Internetmoney}
 
-\chapter{\texorpdfstring{Capitolo 20: \textbf{La creazione di una moneta
-senza
-stato}}{Capitolo 20: La creazione di una moneta senza stato}}\label{capitolo-20-la-creazione-di-una-moneta-senza-stato}
+\chapter{La creazione di una moneta senza
+stato}\label{la-creazione-di-una-moneta-senza-stato}
 
 Nel 1984, l'economista e premio Nobel Friedrich Hayek dichiarò in
 un'intervista:
@@ -12194,7 +12163,8 @@ divario tra velocità di transazione e di liquidazione. Ora si tratta di
 studiarlo e metterlo alla prova per vedere se è abbastanza solido da
 servire a questo scopo su larga scala e a lungo termine.
 
-\textbf{Una panoramica della tecnologia di bitcoin}
+\section{Una panoramica della tecnologia di
+bitcoin}\label{una-panoramica-della-tecnologia-di-bitcoin}
 
 Satoshi ha sintetizzato bitcoin in un post su un forum nel febbraio
 2009, circa un mese dopo il suo lancio. Da allora sono stati scritti
@@ -12646,10 +12616,8 @@ protetta da password e/o da una firma multipla) o non lo costringa a
 cederli. Il libro mastro è trasparente, oggettivo e garantito da risorse
 del mondo reale, ossia elettricità e processori specializzati.
 
-\bookmarksetup{startatroot}
-
-\chapter{Capitolo 21: *Il percorso di monetizzazione di
-Bitcoin**}\label{capitolo-21-il-percorso-di-monetizzazione-di-bitcoin}
+\chapter{Il percorso di monetizzazione di
+Bitcoin}\label{il-percorso-di-monetizzazione-di-bitcoin}
 
 Prima dell'avvento di Bitcoin, chiunque volesse trasferire rapidamente
 valore su lunghe distanze doveva necessariamente passare attraverso un
@@ -13068,8 +13036,10 @@ totale, con livelli di liquidità e adozione da parte degli utenti
 estremamente elevati, la sua famigerata volatilità di prezzo potrà
 realisticamente diminuire.
 
-\textbf{L'applicabilità della legge di Gresham}\footnote{Questa sezione
-  attinge a Lyn Alden, `A Look at the Lightning Network'.}
+\section[L'applicabilità della legge di
+Gresham]{\texorpdfstring{L'applicabilità della legge di
+Gresham\footnote{Questa sezione attinge a Lyn Alden, `A Look at the
+  Lightning Network'.}}{L'applicabilità della legge di Gresham}}\label{lapplicabilituxe0-della-legge-di-gresham331}
 
 Secondo la legge di Gresham, quando le persone si trovano a disporre di
 una moneta buona e di una moneta cattiva con un tasso di cambio fisso (o
@@ -13205,7 +13175,8 @@ Finora, tuttavia, Bitcoin continua ad attrarre nuovi utenti,
 sviluppatori e un fiorente ecosistema di aziende nate attorno ad esso,
 con un valore di rete in crescita strutturale, sebbene molto volatile.
 
-\textbf{Approcci alla valutazione di bitcoin}
+\section{Approcci alla valutazione di
+bitcoin}\label{approcci-alla-valutazione-di-bitcoin}
 
 I numeri esatti cambiano ogni anno, ma secondo stime recenti di Credit
 Suisse e McKinsey il valore degli asset globali supera i 500.000
@@ -13280,7 +13251,8 @@ agevolmente con somme importanti. La rete deve prima saturare
 parzialmente certi tipi di mercati e crescere di conseguenza, per poi
 raggiungere livelli di adozione superiori.
 
-\textbf{Che aspetto avrebbe un `mondo bitcoin'?}
+\section{Che aspetto avrebbe un `mondo
+bitcoin'?}\label{che-aspetto-avrebbe-un-mondo-bitcoin}
 
 Se la rete bitcoin, in una qualche sua forma (una moneta veloce con
 un'offerta fissa, basata su un registro globale, decentralizzato e
@@ -13462,10 +13434,7 @@ possono avere anche conseguenze che potremmo considerare negative.
   possono essere svolti ovunque.
 \end{itemize}
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 22: \textbf{Criptovalute e
-compromessi}}{Capitolo 22: Criptovalute e compromessi}}\label{capitolo-22-criptovalute-e-compromessi}
+\chapter{Criptovalute e compromessi}\label{criptovalute-e-compromessi}
 
 Dopo che Satoshi Nakamoto ha aperto la strada con l'invenzione di
 Bitcoin, il primo network di una criptovaluta decentralizzata e
@@ -13730,7 +13699,7 @@ La risposta è la stratificazione. La maggior parte dei sistemi
 finanziari e delle architetture di rete di successo adotta un approccio
 stratificato, in cui ogni livello è ottimizzato per uno scopo specifico.
 
-\textbf{Un'architettura a strati}
+\section{Un'architettura a strati}\label{unarchitettura-a-strati}
 
 Se si tenta di utilizzare un unico livello della rete blockchain per
 ogni scopo, si finisce per accettare troppi compromessi, rendendolo di
@@ -13916,12 +13885,7 @@ esponenziale da sviluppatori con nuove idee e a cui si possono collegare
 ecosistemi di pagamento di ogni tipo, rendendoli interoperabili fra
 loro.
 
-\section{Note}\label{note-4}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 23: \textbf{Il Lightning
-Network}}{Capitolo 23: Il Lightning Network}}\label{capitolo-23-il-lightning-network}
+\chapter{Il Lightning Network}\label{il-lightning-network}
 
 Al momento della stesura di questo libro, il livello più importante
 costruito sul livello base di Bitcoin è il Lightning Network. Il
@@ -13961,7 +13925,8 @@ ricerche e, nei pochi anni successivi, la sua crescita ha continuato a
 essere rapida.\footnote{Si veda ad esempio Lyn Alden, \emph{Analyzing
   Bitcoin's Network Effect}.}
 
-\textbf{I limiti delle reti broadcast}
+\section{I limiti delle reti
+broadcast}\label{i-limiti-delle-reti-broadcast}
 
 Usare una rete broadcast per comprare il caffè ogni mattina mentre si va
 al lavoro non è un'idea molto scalabile. Una blockchain è concepita per
@@ -14017,7 +13982,8 @@ descritto nella sezione precedente, gli utenti possono così scegliere la
 soluzione che preferiscono, ossia il livello o i livelli più adatti a
 loro, in base alle proprie esigenze specifiche.
 
-\textbf{Il Lightning Network: concetti di base}
+\section{Il Lightning Network: concetti di
+base}\label{il-lightning-network-concetti-di-base}
 
 Immaginate di passare una lunga serata con i vostri amici in un
 ristorante di lusso. Invece di farvi pagare ogni piatto o bevanda, la
@@ -14163,7 +14129,8 @@ l'illegalità nell'uso di determinati software innocui, gratuiti e open
 source, abbastanza leggeri da poter funzionare su un computer portatile
 di base --- e poi escogitare un modo per far rispettare tale divieto.
 
-\textbf{Implementazioni e applicazioni}
+\section{Implementazioni e
+applicazioni}\label{implementazioni-e-applicazioni}
 
 Proprio come per la rete Bitcoin, nessuna azienda controlla la rete
 Lightning.
@@ -14194,7 +14161,8 @@ un'applicazione mobile che gli consentirà di connettersi alla rete,
 nascondendogli la maggior parte dei dettagli tecnici, inclusi quelli
 dell'implementazione di Lightning sottostante.
 
-\textbf{Liquidità ed effetti di rete}
+\section{Liquidità ed effetti di
+rete}\label{liquidituxe0-ed-effetti-di-rete}
 
 La liquidità è il limite principale di una rete che si basa su singoli
 canali di routing.
@@ -14258,12 +14226,10 @@ migliorare e che, con il tempo, protocolli aggiuntivi come Fedimint
 renderanno la rete Lightning ancora più semplice da usare per gli utenti
 meno esperti. Con il tempo, vedremo quali altri livelli e metodi di
 scalabilità verranno sviluppati e adottati su larga scala per soddisfare
-una gamma più ampia di casi d'uso. \#\# Note
+una gamma più ampia di casi d'uso.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 24: \textbf{Proof-of-work contro
-proof-of-stake}}{Capitolo 24: Proof-of-work contro proof-of-stake}}\label{capitolo-24-proof-of-work-contro-proof-of-stake}
+\chapter{Proof-of-work contro
+proof-of-stake}\label{proof-of-work-contro-proof-of-stake}
 
 In un capitolo precedente di questa sezione del libro sono stati
 analizzati diversi compromessi progettuali della blockchain in termini
@@ -14292,7 +14258,7 @@ almeno in parte, lo scopo stesso di usare una blockchain. È possibile
 fare affidamento sull'energia come arbitro neutrale della verità e
 questo capitolo spiegherà in dettaglio il perché.
 
-\textbf{Analisi della proof-of-work}
+\section{Analisi della proof-of-work}\label{analisi-della-proof-of-work}
 
 Come descritto in un capitolo precedente, la rete Bitcoin è programmata
 per creare un nuovo blocco mediamente ogni dieci minuti e aggiungerlo
@@ -14443,7 +14409,8 @@ meccanismo di consenso di Bitcoin, un'entità dovrebbe disporre, nel
 presente, di una quantità inimmaginabile di energia e di potenza di
 calcolo.
 
-\textbf{La proof-of-stake non ha una storia infalsificabile}
+\section{La proof-of-stake non ha una storia
+infalsificabile}\label{la-proof-of-stake-non-ha-una-storia-infalsificabile}
 
 La proof-of-stake è un sistema in cui i possessori della criptovaluta
 bloccano temporaneamente le proprie monete, mettendole in `stake', per
@@ -14679,7 +14646,8 @@ ripristinarsi dopo un'interruzione della rete, se non attraverso
 decisioni oligopolistiche (governance umana) o tramite checkpoint
 regolari su un sistema proof-of-work.
 
-\textbf{La proof-of-stake è molto più complessa}
+\section{La proof-of-stake è molto più
+complessa}\label{la-proof-of-stake-uxe8-molto-piuxf9-complessa}
 
 La proof-of-work è semplice perché è autoesplicativa; non è necessario
 punire i minatori disonesti che tentano di validare la catena errata o
@@ -14727,7 +14695,8 @@ una governance parzialmente centralizzata per la mancanza di una reale
 fault tolerance. La proof-of-stake come meccanismo di consenso permette
 il funzionamento di una blockchain, ma non di una vera timechain.
 
-\textbf{La proof-of-stake è intrinsecamente centralizzante}
+\section{La proof-of-stake è intrinsecamente
+centralizzante}\label{la-proof-of-stake-uxe8-intrinsecamente-centralizzante}
 
 Gli investitori che hanno familiarità con le società che estraggono
 risorse naturali sanno quanto siano generalmente bassi i loro rendimenti
@@ -14844,7 +14813,8 @@ potenza di calcolo ed elettricità per creare nuovi blocchi di
 transazioni. Per questo motivo la rete è catturabile in modo temporaneo,
 ma non necessariamente permanente.
 
-\textbf{La limitata capacità di distribuzione della proof-of-stake}
+\section{La limitata capacità di distribuzione della
+proof-of-stake}\label{la-limitata-capacituxe0-di-distribuzione-della-proof-of-stake}
 
 Oltre a ordinare le transazioni e a fungere da servizio di marcatura
 temporale decentralizzato, un modello di consenso proof-of-work consente
@@ -14928,7 +14898,8 @@ accumulare i loro coin indefinitamente e in modo esponenziale. Questo,
 in aggiunta a qualsiasi altra fonte di reddito esterna che possano
 avere.
 
-\textbf{Esistono usi per i sistemi Proof-of-Stake?}
+\section{Esistono usi per i sistemi
+Proof-of-Stake?}\label{esistono-usi-per-i-sistemi-proof-of-stake}
 
 La mia analisi mi porta a concludere che i sistemi proof-of-stake non
 sono meccanismi di consenso adatti a creare una robusta moneta globale e
@@ -15170,7 +15141,8 @@ da un'autorità di registrazione (per le grandi aziende) o quello di cui
 si ha conoscenza diretta, come un'attività locale (per le piccole
 imprese).
 
-\textbf{L'energia come arbitro della verità}
+\section{L'energia come arbitro della
+verità}\label{lenergia-come-arbitro-della-verituxe0}
 
 Prima dell'invenzione della proof-of-work, e soprattutto prima di
 Bitcoin, qualsiasi contenuto digitale era facilmente riproducibile quasi
@@ -15306,12 +15278,8 @@ per registrarle direttamente sulla blockchain di Bitcoin, il che
 consente a tali informazioni di essere accessibili in un modo la cui
 integrità sia dimostrabile, finché la rete continuerà a esistere.
 
-\section{Note}\label{note-5}
-
-\bookmarksetup{startatroot}
-
-\chapter{Capitolo 25: *Come bitcoin consuma
-energia**}\label{capitolo-25-come-bitcoin-consuma-energia}
+\chapter{Come bitcoin consuma
+energia}\label{come-bitcoin-consuma-energia}
 
 Nel 2017, il Forum economico mondiale ha pubblicato un articolo secondo
 cui, entro il 2020, la rete bitcoin avrebbe potuto consumare tutta
@@ -15339,7 +15307,8 @@ mente sono due: primo, a lungo termine il consumo energetico di bitcoin
 bitcoin consuma principalmente energia non sfruttabile, che andrebbe
 altrimenti sprecata.
 
-\textbf{I ricavi del mining: sussidi e commissioni di transazione}
+\section{I ricavi del mining: sussidi e commissioni di
+transazione}\label{i-ricavi-del-mining-sussidi-e-commissioni-di-transazione}
 
 Analizzare le entrate totali del mining di bitcoin ci fornisce un buon
 indicatore del tetto massimo di spesa annua per l'elettricità che il
@@ -15581,8 +15550,8 @@ di svariate altre industrie che generalmente non ci creano particolari
 scrupoli morali.\footnote{Nic Carter, \emph{Debunking `Bitcoin Wastes
   Energy'}, 14:14--17:20.}
 
-\textbf{Scalabilità a strati e il falso mito del `costo per
-transazione'}
+\section{Scalabilità a strati e il falso mito del `costo per
+transazione'}\label{scalabilituxe0-a-strati-e-il-falso-mito-del-costo-per-transazione}
 
 La rete Bitcoin può elaborare un massimo di alcune centinaia di migliaia
 di transazioni al giorno sul suo strato di base, circa cinque al
@@ -15676,7 +15645,8 @@ ridurre al minimo la necessità di fiducia ed evitare l'uso del credito,
 attraverso software con contratti programmabili e tempi di regolamento
 brevi.
 
-\textbf{Perché i minatori di bitcoin sono acquirenti di energia anomali}
+\section{Perché i minatori di bitcoin sono acquirenti di energia
+anomali}\label{perchuxe9-i-minatori-di-bitcoin-sono-acquirenti-di-energia-anomali}
 
 Al di là di un semplice calcolo del consumo energetico di bitcoin, è
 importante considerare anche le modalità e le tipologie di energia
@@ -15760,7 +15730,8 @@ modi innovativi con cui i minatori di bitcoin sfruttano energia
 altrimenti isolata o inutilizzata, a vantaggio loro e delle loro
 controparti.
 
-\textbf{1) Mining di bitcoin con energia idroelettrica isolata}
+\section{1) Mining di bitcoin con energia idroelettrica
+isolata}\label{mining-di-bitcoin-con-energia-idroelettrica-isolata}
 
 Per molto tempo, la Cina è stata il principale Paese per l'attività di
 mining di bitcoin. Al loro apice, i minatori cinesi rappresentavano
@@ -15804,7 +15775,8 @@ propizi al mining di bitcoin. L'energia idroelettrica inutilizzata può
 così essere monetizzata attraverso il mining di bitcoin, anziché andare
 sprecata.
 
-\textbf{2) Il mining di bitcoin con gas naturale disperso}
+\section{2) Il mining di bitcoin con gas naturale
+disperso}\label{il-mining-di-bitcoin-con-gas-naturale-disperso}
 
 Molti giacimenti petroliferi contengono anche gas naturale associato.
 
@@ -15846,7 +15818,8 @@ generatore elettrico per convertire il metano in anidride carbonica è
 più efficiente della semplice combustione in torcia. I miner di bitcoin,
 dal canto loro, ottengono una fonte di elettricità a basso costo.
 
-\textbf{3) Mining di bitcoin dal gas delle discariche}
+\section{3) Mining di bitcoin dal gas delle
+discariche}\label{mining-di-bitcoin-dal-gas-delle-discariche}
 
 Oltre al gas naturale estratto insieme ai giacimenti petroliferi,
 un'altra importante fonte di dispersione di metano nell'atmosfera sono
@@ -15921,7 +15894,8 @@ cui sono certo, però, è che le discariche di tutto il mondo disperdono
 nell'atmosfera metano ad alta densità energetica e storicamente non è
 mai esistito un modo flessibile ed economico per sfruttarlo.
 
-\textbf{4) Il mining di bitcoin come accumulatore di rete}
+\section{4) Il mining di bitcoin come accumulatore di
+rete}\label{il-mining-di-bitcoin-come-accumulatore-di-rete}
 
 Le reti elettriche devono costantemente compensare le variazioni di due
 fattori: l'offerta e la domanda di elettricità.
@@ -16142,7 +16116,8 @@ oppure situarsi direttamente presso gli impianti di produzione per
 monetizzare l'energia in eccesso, o ancora sfruttare diverse risorse
 energetiche isolate e non connesse alla rete.
 
-\textbf{5) I minatori di bitcoin come stufe}
+\section{5) I minatori di bitcoin come
+stufe}\label{i-minatori-di-bitcoin-come-stufe}
 
 La maggior parte dell'energia consumata dai minatori di bitcoin viene
 rilasciata sotto forma di calore. In sostanza, un processore è un
@@ -16187,7 +16162,8 @@ essenzialmente gratuita.\footnote{Satoshi Nakamoto, `Re: Bitcoin Minting
   is Thermodynamically Perverse', forum BitcoinTalk, 9 agosto 2010.}
 \end{quote}
 
-\textbf{6) Promuovere nuove tecnologie energetiche}
+\section{6) Promuovere nuove tecnologie
+energetiche}\label{promuovere-nuove-tecnologie-energetiche}
 
 Un'azienda chiamata Product Recovery Technology International, o `PRTI'
 in breve, ha passato l'ultimo decennio a convertire pneumatici di scarto
@@ -16261,8 +16237,9 @@ uso. Nel 2022 ho parlato approfonditamente del loro lavoro con i
 co-fondatori Nathaniel Harmon e Michael Bennett e, avendo una formazione
 in ingegneria elettrica, trovo questa tecnologia promettente.
 
-\textbf{7) Sviluppare da zero l'infrastruttura elettrica dei paesi in
-via di sviluppo}
+\section{7) Sviluppare da zero l'infrastruttura elettrica dei paesi in
+via di
+sviluppo}\label{sviluppare-da-zero-linfrastruttura-elettrica-dei-paesi-in-via-di-sviluppo}
 
 Molti paesi a basso reddito dispongono di ingenti risorse energetiche,
 inclusa la capacità idroelettrica. Tuttavia, devono spesso fare i conti
@@ -16412,7 +16389,8 @@ operativa, l'area può diventare più produttiva e quindi più ricca,
 permettendo alle persone di acquistare più dispositivi, consumare più
 energia e godere di una migliore qualità della vita.
 
-\textbf{Una tecnologia a favore dell'energia}
+\section{Una tecnologia a favore
+dell'energia}\label{una-tecnologia-a-favore-dellenergia}
 
 Per molti, l'idea che l'energia non sia fungibile è controintuitiva.
 Questo è vero per alcuni tipi di idrocarburi, come il gas naturale
@@ -16470,10 +16448,8 @@ potranno utilizzare con profitto svariate fonti di energia pulita
 altrimenti troppo lontane dagli insediamenti umani, incentivando le
 persone a trasferirsi nelle loro vicinanze.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 26: \textbf{Analisi del rischio delle
-criptovalute}}{Capitolo 26: Analisi del rischio delle criptovalute}}\label{capitolo-26-analisi-del-rischio-delle-criptovalute}
+\chapter{Analisi del rischio delle
+criptovalute}\label{analisi-del-rischio-delle-criptovalute}
 
 I lettori che, prima di arrivare a questa parte del libro, non hanno mai
 nutrito particolare interesse od ottimismo per Bitcoin, potrebbero
@@ -16658,7 +16634,8 @@ concentrerà sulle principali categorie di rischio associate alla rete
 Bitcoin e ad altre criptovalute, spiegando perché le considero gestibili
 o mitigate, sebbene ancora presenti.
 
-\textbf{Rischio 1: diluizione del mercato}
+\section{Rischio 1: diluizione del
+mercato}\label{rischio-1-diluizione-del-mercato}
 
 Il primo rischio che ho individuato era quello della diluizione del
 mercato. Se si continuano a creare nuove criptovalute, cosa impedisce
@@ -16728,7 +16705,8 @@ ridurre la quota di mercato di Bitcoin ma, in pratica, solo le prime due
 dozzine di monete contano in termini di commerciabilità e, tra queste,
 solo le monete proof-of-work hanno una cronologia non falsificabile.
 
-\textbf{Rischio 2: Bug software critici}
+\section{Rischio 2: Bug software
+critici}\label{rischio-2-bug-software-critici}
 
 Nel 2010, quando era ancora nuovo di zecca e aveva a malapena un prezzo
 di mercato, il client del nodo di Bitcoin ha avuto un bug di inflazione,
@@ -16823,7 +16801,8 @@ rilevato), allora l'operatore perde temporaneamente la propria sovranità
 monetaria e la fiducia nel network potrebbe risentirne in modo
 permanente.
 
-\textbf{Rischio 3: La messa al bando da parte dei governi}
+\section{Rischio 3: La messa al bando da parte dei
+governi}\label{rischio-3-la-messa-al-bando-da-parte-dei-governi}
 
 Bitcoin è una moneta apolide, e a molte componenti dello `stato' la sua
 esistenza non è affatto gradita.
@@ -17013,7 +16992,8 @@ delle tasse o tagli ad altre spese. Man mano che questi equilibri si
 incrineranno, è naturale che le persone cerchino un colpevole, e i
 possessori di bitcoin sono tra i capri espiatori ideali da additare.
 
-\textbf{Rischio 4: Minacce informatiche}
+\section{Rischio 4: Minacce
+informatiche}\label{rischio-4-minacce-informatiche}
 
 I minatori di bitcoin utilizzano l'algoritmo di hashing SHA-256 per
 generare nuovi blocchi di transazioni per la blockchain. Tecnicamente,
@@ -17144,11 +17124,8 @@ per far conoscere al pubblico le sfumature del suo funzionamento e la
 sua potenziale utilità, così da lasciarle tutto lo spazio necessario per
 sopravvivere e prosperare mentre il suo ecosistema matura.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 27: \textbf{Stablecoin e valute
-digitali delle banche
-centrali}}{Capitolo 27: Stablecoin e valute digitali delle banche centrali}}\label{capitolo-27-stablecoin-e-valute-digitali-delle-banche-centrali}
+\chapter{Stablecoin e valute digitali delle banche
+centrali}\label{stablecoin-e-valute-digitali-delle-banche-centrali}
 
 Le blockchain e le reti basate su registri distribuiti permettono di
 utilizzare le valute fiat con modalità prettamente digitali.
@@ -17160,7 +17137,8 @@ direttamente dalle banche centrali (le cosiddette `valute digitali delle
 banche centrali' o, in breve, CBDC). In questo capitolo si analizzeranno
 le applicazioni e i rischi associati a queste tecnologie.
 
-\textbf{Applicazioni e rischi delle stablecoin}
+\section{Applicazioni e rischi delle
+stablecoin}\label{applicazioni-e-rischi-delle-stablecoin}
 
 La prima stablecoin è stata sviluppata nel 2014 e operava su un layer
 basato sulla rete Bitcoin. Da allora, sono nate numerose stablecoin, che
@@ -17252,7 +17230,7 @@ desiderino (o, più in generale, a qualsiasi asset tokenizzato), ciò
 rappresenta un potenziale sconvolgimento dell'attuale sistema basato su
 160 diverse valute fiat e mercati dei capitali.
 
-\textbf{CBDC: panoramica}
+\section{CBDC: panoramica}\label{cbdc-panoramica}
 
 La creazione della rete Bitcoin, e in seguito delle stablecoin
 collateralizzate da valute fiat ed emesse da privati, ha inevitabilmente
@@ -17289,7 +17267,8 @@ miglioramenti nelle transazioni transfrontaliere e permette forme più
 mirate di politica monetaria, dall'altro solleva importanti questioni di
 privacy e controllo per i cittadini.
 
-\textbf{CBDC e pagamenti transfrontalieri}
+\section{CBDC e pagamenti
+transfrontalieri}\label{cbdc-e-pagamenti-transfrontalieri}
 
 I pagamenti transfrontalieri restano uno dei punti deboli del sistema
 bancario globale, nonostante la presenza di infrastrutture di
@@ -17342,7 +17321,8 @@ rendere più efficienti i pagamenti transfrontalieri, instradandoli
 attraverso una complessa rete di connessioni globali che impedisce a un
 singolo paese di fungere da collo di bottiglia per l'intero sistema.
 
-\textbf{CBDC: politica monetaria e fiscale mirata}
+\section{CBDC: politica monetaria e fiscale
+mirata}\label{cbdc-politica-monetaria-e-fiscale-mirata}
 
 Gli Stati Uniti sono un paese di 330 milioni di persone, eppure la
 Federal Reserve stabilisce un unico tasso d'interesse di riferimento per
@@ -17375,7 +17355,8 @@ graduale. Dal punto di vista dell'emittente, più sono sofisticati gli
 strumenti a sua disposizione per controllare i dettagli della valuta,
 meglio è.
 
-\textbf{CBDC: l'imposizione di tassi di interesse negativi}
+\section{CBDC: l'imposizione di tassi di interesse
+negativi}\label{cbdc-limposizione-di-tassi-di-interesse-negativi}
 
 Alla fine degli anni duemiladieci, durante la bolla globale dei titoli
 disinflazionistici, molti responsabili delle politiche monetarie hanno
@@ -17485,7 +17466,8 @@ queste proposte potrebbero riemergere in futuri periodi di forte
 disinflazione, poiché il desiderio dei decisori politici di esercitare
 un maggiore controllo sul libro mastro è un tema ricorrente.
 
-\textbf{Le CBDC: automazione del controllo legale}
+\section{Le CBDC: automazione del controllo
+legale}\label{le-cbdc-automazione-del-controllo-legale}
 
 Nel 2020, il venture capitalist e analista Nic Carter ha sostenuto sui
 social media che, se il denaro contante venisse inventato oggi, verrebbe
@@ -17675,11 +17657,12 @@ restituisce maggiore autonomia finanziaria ai singoli utenti disposti ad
 assumerla. La sesta e ultima parte di questo libro esplora le
 implicazioni etiche di queste due diverse direzioni.
 
-\bookmarksetup{startatroot}
+\part{Tecnologia finanziaria e diritti umani}
 
-\chapter{Parte 6}\label{parte-6}
+\chapter*{Parte 6}\label{parte-6}
+\addcontentsline{toc}{chapter}{Parte 6}
 
-\textbf{Tecnologia finanziaria e diritti umani}
+\markboth{Parte 6}{Parte 6}
 
 \emph{`Questa nazione fu fondata da uomini di diverse nazionalità e
 origini. Fu fondata sul principio che tutti gli uomini sono creati
@@ -17692,12 +17675,7 @@ desiderano essere liberi.'}\footnote{John F. Kennedy, \emph{Radio and
 
 -John F. Kennedy
 
-\section{Note}\label{note-6}
-
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 28: \textbf{Il degrado della
-privacy}}{Capitolo 28: Il degrado della privacy}}\label{capitolo-28-il-degrado-della-privacy}
+\chapter{Il degrado della privacy}\label{il-degrado-della-privacy}
 
 Come già illustrato in questo libro, il diritto alla privacy è sempre
 più minacciato nell'era digitale. Un tempo violare la privacy era
@@ -17799,7 +17777,7 @@ per proteggere se stessi e i propri beni, il cui superamento richiede
 energia e sforzi legali, allo stesso modo si devono erigere muri
 digitali attorno ai propri dati per lo stesso scopo.
 
-\textbf{Privacy transazionale}
+\section{Privacy transazionale}\label{privacy-transazionale}
 
 Il diritto alla privacy include naturalmente la privacy delle
 transazioni. Se un governo, una società o un privato cittadino
@@ -17885,7 +17863,8 @@ era quello di contrastare il finanziamento del terrorismo e il
 riciclaggio di denaro. Diversi altri Paesi prevedono restrizioni simili
 sull'uso del contante.
 
-\textbf{La saga dei cercapersone negli anni '80}
+\section{La saga dei cercapersone negli anni
+'80}\label{la-saga-dei-cercapersone-negli-anni-80}
 
 Naturalmente, i criminali sfruttano le tecnologie emergenti non appena
 diventano disponibili. Negli anni `80, ad esempio, gli spacciatori
@@ -17937,7 +17916,8 @@ l'idea di limitare l'uso dei cercapersone appare ridicola. È una
 tecnologia così superata rispetto a quella accessibile oggi al 90\%
 della popolazione mondiale.
 
-\textbf{Capitalismo della sorveglianza}
+\section{Capitalismo della
+sorveglianza}\label{capitalismo-della-sorveglianza}
 
 Nel corso degli anni 2000 e 2010, si è affermata una forte tendenza a
 monetizzare i dati degli utenti. Aziende di ogni tipo offrivano servizi
@@ -17991,7 +17971,8 @@ e altre telecamere rivolte verso l'esterno. In un'area urbana, a queste
 si aggiungono i vari sistemi di videosorveglianza per la prevenzione dei
 crimini.
 
-\textbf{Innumerevoli violazioni di dati}
+\section{Innumerevoli violazioni di
+dati}\label{innumerevoli-violazioni-di-dati}
 
 Purtroppo, le violazioni di dati sono all'ordine del giorno e colpiscono
 governi, aziende e singoli cittadini. Alla fine, a farne le spese sono
@@ -18082,7 +18063,7 @@ propri utenti. È probabile che la maggior parte dei lettori di questo
 libro sia stata vittima di numerose violazioni dei dati nell'ultimo
 decennio, incluse alcune di cui non è nemmeno a conoscenza.
 
-\textbf{La rivelazione di Snowden}
+\section{La rivelazione di Snowden}\label{la-rivelazione-di-snowden}
 
 Nel 2013, Edward Snowden, un collaboratore esterno dell'Agenzia per la
 Sicurezza Nazionale (NSA) statunitense oggi ben noto, ha diffuso ai
@@ -18127,7 +18108,8 @@ opporsi o di mettere in discussione la natura di tali programmi. Dieci
 anni dopo, nel 2023, programmi di questo tipo continuano a esistere in
 una miriade di forme, sia negli Stati Uniti che nel resto del mondo.
 
-\textbf{La proliferazione della sorveglianza lato client}
+\section{La proliferazione della sorveglianza lato
+client}\label{la-proliferazione-della-sorveglianza-lato-client}
 
 Nel 2016 è stato scoperto Pegasus, una sofisticata suite di spyware per
 telefoni cellulari. Ahmed Mansoor, un attivista per i diritti umani
@@ -18335,7 +18317,8 @@ stata coinvolta in precedenza in altre attività di spionaggio ai danni
 di Khashoggi.\footnote{Bajak, `Probe'.}
 \end{quote}
 
-\textbf{L'esportazione cinese della sorveglianza}
+\section{L'esportazione cinese della
+sorveglianza}\label{lesportazione-cinese-della-sorveglianza}
 
 Nel 2013 la Cina ha lanciato l'iniziativa della nuova via della seta
 (Belt and Road Initiative), una strategia globale per lo sviluppo di
@@ -18473,7 +18456,8 @@ di grandi esportatori di tecnologia e partner commerciali, tra cui la
 Cina, gli Stati Uniti e pochi altri, è in grado di rifornirli tutti. Si
 tratta di `sorveglianza come servizio'.
 
-\textbf{La mentalità della sorveglianza e del controllo}
+\section{La mentalità della sorveglianza e del
+controllo}\label{la-mentalituxe0-della-sorveglianza-e-del-controllo}
 
 Una sorveglianza governativa estesa, specie se utilizzata in modo
 automatico e onnipresente anziché in modo mirato e basato su un fondato
@@ -18533,7 +18517,7 @@ società civile ha generalmente esercitato una pressione sufficiente da
 eleggere leader disposti a smantellare i poteri precedentemente
 acquisiti e a ridurre attivamente l'ingerenza dello stato.
 
-\textbf{Ricapitolando}
+\section{Ricapitolando}\label{ricapitolando}
 
 Nell'era moderna, dovremmo dare per scontato che praticamente tutte le
 nostre informazioni personali vengano raccolte in banche dati aziendali,
@@ -18614,10 +18598,7 @@ diritti di proprietà più solidi potrebbero cedere a simili pressioni (e
 di fatto lo hanno già fatto in varia misura), mentre quelli più fragili
 possono essere completamente assoggettati.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 29: \textbf{Difesa
-asimmetrica}}{Capitolo 29: Difesa asimmetrica}}\label{capitolo-29-difesa-asimmetrica}
+\chapter{Difesa asimmetrica}\label{difesa-asimmetrica}
 
 Nel capitolo precedente abbiamo analizzato i rischi associati alla
 riduzione o all'eliminazione della privacy sociale e finanziaria. Tanto
@@ -18683,7 +18664,8 @@ crittografia è, di conseguenza, un mezzo per rendere la violazione della
 privacy nell'era digitale tanto dispendiosa quanto lo era nell'era
 pre-digitale.
 
-\textbf{Il manifesto di un cypherpunk}
+\section{Il manifesto di un
+cypherpunk}\label{il-manifesto-di-un-cypherpunk}
 
 Per gran parte del secolo scorso, sono stati scritti e letti numerosi
 libri di fantascienza distopica. Con l'avvento di internet negli anni
@@ -18822,7 +18804,8 @@ informativa che, sebbene non invincibile, garantisce una stabilità che
 va oltre ciò che un'unica entità potente può decidere in un dato
 momento.
 
-\textbf{Il precedente legale del codice come libertà di parola}
+\section{Il precedente legale del codice come libertà di
+parola}\label{il-precedente-legale-del-codice-come-libertuxe0-di-parola}
 
 Nel 1991, l'informatico e crittografo Phil Zimmermann creò un programma
 chiamato `Pretty Good Privacy' o, in breve, PGP. Zimmermann pubblicò il
@@ -18910,7 +18893,8 @@ ai singoli sviluppatori di software, nazionali o internazionali, di
 creare e distribuire codice \emph{open source} gratuito che la renda
 disponibile.
 
-\textbf{Tentativi di regolamentare le criptovalute come le banche}
+\section{Tentativi di regolamentare le criptovalute come le
+banche}\label{tentativi-di-regolamentare-le-criptovalute-come-le-banche}
 
 Quando l'automobile fu introdotta alla fine del XIX secolo, sorsero, e
 non a torto, diverse preoccupazioni per la sicurezza pubblica e per la
@@ -19115,11 +19099,8 @@ sempre più onnipresenti e facili da usare, e i governi e le aziende
 `dall'alto', che creano tecniche di sorveglianza e controllo altrettanto
 pervasive.
 
-\bookmarksetup{startatroot}
-
-\chapter{\texorpdfstring{Capitolo 30: \textbf{Un mondo di apertura o un
-mondo di
-controllo}}{Capitolo 30: Un mondo di apertura o un mondo di controllo}}\label{capitolo-30-un-mondo-di-apertura-o-un-mondo-di-controllo}
+\chapter{Un mondo di apertura o un mondo di
+controllo}\label{un-mondo-di-apertura-o-un-mondo-di-controllo}
 
 Nel maggio del 2022, mi sono ritrovato in un luogo in cui non mi
 aspettavo né avevo pianificato di essere: il parlamento norvegese a
@@ -19889,7 +19870,7 @@ approfondito e sostenuto.
 
 \bookmarksetup{startatroot}
 
-\chapter{Bibliografia**}\label{bibliografia}
+\chapter{Bibliografia}\label{bibliografia}
 
 Acemoglu, Daron, e Robinson, James A. \emph{Why Nations Fail: The
 Origins of Power, Prosperity, and Poverty.} Crown Publishing: New York,
@@ -21433,7 +21414,33 @@ York, 2019.
 
 \bookmarksetup{startatroot}
 
-\chapter{}\label{section-1}
+\chapter{L'autrice}\label{lautrice}
+
+Lyn Alden è un'analista macroeconomica molto seguita che offre analisi
+per investitori privati e istituzionali. La sua ricerca si concentra
+sull'analisi dei sistemi monetari e dei mercati energetici.
+
+Oltre alle sue pubblicazioni, Lyn è membro del consiglio di
+amministrazione di Swan.com e consulente per la società di venture
+capital Ego Death Capital. In questi ruoli, collabora con investitori e
+fondatori di startup per contribuire a creare la nuova generazione di
+tecnologie monetarie e servizi finanziari. In precedenza, ha lavorato
+per oltre un decennio nel settore aeronautico, ricoprendo diversi ruoli
+in ambito ingegneristico, gestionale e di approvvigionamento.
+
+La formazione di Lyn unisce competenze in ambito ingegneristico e
+finanziario. Ha conseguito una laurea in ingegneria elettronica e un
+master in ingegneria gestionale, con specializzazione in ingegneria dei
+sistemi, ingegneria economica e modellizzazione finanziaria.
+
+È stata ospite di programmi come Yahoo Finance, Fox Business, Macro
+Voices, What Bitcoin Did e Blockworks, e i suoi contributi sono stati
+citati da diverse testate finanziarie, tra cui \emph{The Wall Street
+Journal}, \emph{The New York Times}, CNBC, Reuters, \emph{Forbes},
+\emph{Fortune} e \emph{Barron's}. Ha tenuto interventi all'Oslo Freedom
+Forum, al DeCenter della Princeton University e allo Stevens Center for
+Innovation in Finance di Wharton, e ha partecipato a numerose conferenze
+a tema tecnologico e finanziario.
 
 
 \backmatter
