@@ -10,6 +10,10 @@ blockquote {
     margin-bottom: 2em;
 }
 
+p {
+    color: $body-color;
+}
+
 // Index about section (TITLE PAGE)
 .about-entity {
     padding-left: 1em;
@@ -68,6 +72,9 @@ blockquote {
     padding-block: 0.1rem !important;
     padding-inline: 0rem !important;
     font-size: 0.8rem !important;
+    border-radius: $border-radius !important;
+    border-color: $link-color !important;
+    background-color: $link-color !important;
 }
 
 .nav-page-previous {
@@ -77,14 +84,93 @@ blockquote {
 
 .nav-page-text {
     font-size: 0.8rem !important;
-    color: $link-color !important;
+    color: $navbar-bg !important;
+    padding-inline: 1rem !important;
 }
 
 .nav-page-next {
+    color: $navbar-bg !important;
+    padding-inline: 1rem !important;
 
-    color: $link-color !important;
+    &:hover {
+        background-color: $link-color-hover !important;
+    }
+
+    a {
+        color: $navbar-bg !important;
+        
+        &:hover {
+            color: $navbar-bg !important;
+        }
+    }
 }
 
 #quarto-content {
     margin-bottom: 2em;
+}
+
+.custom-toc {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0;
+  background: none;
+  border: none;
+
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em 0;
+  }
+
+  > ul > li, > ol > li {
+    margin-bottom: 0.5em;
+  }
+
+  // Part headings (top-level list items)
+  > ul > li > a, > ol > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $toc-title;
+    margin-bottom: 0.7em;
+    text-decoration: none;
+    border-radius: 1.5em;
+    padding: 0.7em 1.2em;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+  }
+
+  // Chapter links (nested list items)
+  ul ul li, ol ol li {
+    margin-bottom: 0.5em;
+  }
+
+  ul ul li a, ol ol li a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $toc-title;
+    background: $navbar-bg;
+    border-radius: 10px;
+    border: 1px solid $navbar-border-color;
+    padding: 0.5em 1.2em;
+    margin-left: 1.5em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $link-color-hover-toc;
+    }
+  }
+}
+
+.custom-toc ul, .custom-toc ol {
+  list-style: none;
+  padding-left: 0;
 }

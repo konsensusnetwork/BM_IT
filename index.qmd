@@ -25,25 +25,9 @@ format:
       sidebar-width: 0px
       body-width: 1400px
       gutter-width: 25px
-    toc: false
-listing:
-  id: custom-toc
-  contents: chapters
-  sort: false
-  type: table
-  fields:
-    - title
-    - reading-time
-  sort-ui: false
-  filter-ui: false
 ---
 ::: {.content-hidden when-format="pdf"}
 ## Over dit boek {.unnumbered}
-
-
-## Reviews {.unnumbered}
-
-
 
 ## Content
 ::: {#sample-listings}

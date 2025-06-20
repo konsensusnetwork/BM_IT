@@ -26,8 +26,7 @@ Nel caso in cui non esista un processo ritualizzato di scambio tra gruppi relati
 
 Oltre al piacere intrinseco che deriva dal soccorrere l’altro, il motivo per cui offro questo credito gratuito a una persona vicina risiede nella consapevolezza che, ad un certo punto, mi troverò anch’io in difficoltà. Potrei ammalarmi, subire un infortunio o entrare in stato di gravidanza da cui non sarò in grado di procurarmi il cibo per un periodo, e dovrò dunque affidarmi a chi oggi beneficia del mio favore. Offrendo una serie di aiuti in eccesso, accresco la mia posizione sociale e, di conseguenza, la mia sicurezza all’interno del gruppo. Questo stesso ragionamento si applica anche ai tempi moderni, quando si presta soccorso ad amici, vicini e familiari. Naturalmente, difficilmente agirò in maniera completamente meccanica quando compio un favore; potrei farlo semplicemente perché il mio organismo è predisposto, a livello biologico, a provare soddisfazione nell’aiutare l’altro – una caratteristica frutto di migliaia di generazioni di selezione naturale che ha consentito ai nostri antenati di sopravvivere e prosperare come esseri sociali intelligenti e generosi. Eppure, nel profondo, si celano anche calcoli mentali consapevoli: compiendo questo favore rafforzo l’intero gruppo, me compreso, e accumulo una forma di assicurazione personale o riserva sociale per il futuro, a vantaggio mio e dei miei cari. In altre parole, impiego lavoro e risorse in tempi di abbondanza per ottenere un risparmio nel nostro registro sociale collettivo. Tale credito sociale, ovvero questo registro mentale informale, costituisce la soluzione, per il gruppo di amici e parenti, al problema della “doppia coincidenza dei desideri”. Grazie a un sistema di credito sociale flessibile, possiamo facilmente venire incontro alle necessità altrui, anche se l’altra parte, al momento, non ha bisogno di nulla.
 
-In uno studio del 2010 intitolato *Wealth Transmission and Inequality Among Hunter-Gatherers*, in cui veniva esaminata una vasta gamma di letteratura esistente, i ricercatori hanno osservato che, in alcuni casi, l’assicurazione sociale può basarsi sulla reputazione della persona in difficoltà e sulla qualità della sua rete sociale.  
-[^13]: Vedi riferimento bibliografico originale per ulteriori dettagli.
+In uno studio del 2010 intitolato *Wealth Transmission and Inequality Among Hunter-Gatherers*, in cui veniva esaminata una vasta gamma di letteratura esistente, i ricercatori hanno osservato che, in alcuni casi, l’assicurazione sociale può basarsi sulla reputazione della persona in difficoltà e sulla qualità della sua rete sociale.
 
 Nelle società di cacciatori-raccoglitori la maggior parte degli adulti contribuisce attivamente alla produzione e lavorazione degli alimenti, nonché alla fabbricazione e manutenzione degli strumenti. Inoltre, la cura dei bambini e il provisionamento sono generalmente compiti affidati ai genitori. Queste attività richiedono notevoli capacità di forza, resistenza, acuità visiva e altri indicatori di buona salute, pertanto è lecito aspettarsi che il benessere somatico costituisca un elemento cruciale per il successo e la qualità della vita. D'altro canto, coloro che sperimentano periodicamente prestazioni fisiche inferiori possono solitamente contare sul sostegno degli altri, che si manifesta attraverso la condivisione del cibo, l'assistenza nella cura dei bambini e la protezione nei conflitti. Tale forma di assicurazione sociale è considerata la norma e si rende ampiamente disponibile, anche se alcuni studi suggeriscono che la qualità di questo supporto varia in funzione della “ricchezza relazionale” (ovvero la reputazione, l’ampiezza e la qualità della rete sociale) dell’individuo o del nucleo familiare in difficoltà (Gurven, et al. 2000; Wiessner 2002; Nolin 2008).[^14]
 
@@ -54,9 +53,9 @@ Come la maggior parte dei cacciatori-raccoglitori, i !Kung trascorrono l’inter
 Come ci si potrebbe attendere, il continente africano ospita le perline più antiche conosciute. Nel sito archeologico della Grotta di Blombos, in Sudafrica, sono stati rinvenuti piccoli gusci di lumaca, muniti di minuscoli fori, e datati a circa 75.000 anni fa. La U.S. National Science Foundation riportò questa scoperta nel 2004:
 
 > I gusci perforati rinvenuti nella Grotta di Blombos, in Sudafrica, sembrano essere stati infilati come perline circa 75.000 anni fa – rendendoli 30.000 anni più antichi di qualsivoglia ornamento personale precedentemente identificato. Gli archeologi che hanno scavato il sito, situato sulla costa dell’Oceano Indiano, hanno infatti ritrovato 41 gusci, tutti dotati di fori e segni di usura in posizioni analoghe, in uno strato di sedimento depositato durante il Medio Paleolitico (MSA).
-
+> 
 > “Le perline della Grotta di Blombos costituiscono una prova inconfutabile, forse della più antica conservazione di informazioni al di fuori del cervello umano”, afferma Christopher Henshilwood, direttore del Blombos Cave Project e professore presso il Centre for Development Studies dell’Università di Bergen in Norvegia.
-
+> 
 > I gusci, rinvenuti in gruppi fino a 17 pezzi, appartengono a un minuscolo mollusco netturbino, il Nassarius kraussianus, che abita gli estuari. Essi dovettero essere trasportati al sito della grotta dai fiumi più vicini, situati a circa 20 chilometri ad est o ad ovest lungo la costa. La loro selezione per dimensione e la perforazione deliberata suggeriscono che siano stati trasformati in perline direttamente sul luogo o in prossimità del trasporto alla grotta. Infine, la presenza di tracce di ocra rossa indica che le perline stesse o le superfici con le quali venivano a contatto erano state ricoperte con questo ampiamente utilizzato pigmento di ossido di ferro.[^19]
 
 Il cibo deperisce e, in un mondo privo di congelatori, le persone non hanno l’incentivo di accumulare viveri in eccesso rispetto al fabbisogno immediato. Allo stesso modo, lance e pellicce sono ingombranti e, oltre una certa quantità, il valore marginale di averne in surplus è decisamente scarso. Gli scambi tra tribù risultano complicati perché ciascuna parte deve possedere esattamente ciò che l’altra richiede. La soluzione a tali criticità risiede proprio nella produzione di perline in guscio scolpite e levigate: essendo resistenti al deperimento e poco ingombranti, è conveniente – anzi, anche auspicabile – accumularne in eccesso non appena le altre necessità sono soddisfatte. Queste perline risultano quasi universalmente desiderate in un contesto tecnologico di base; anche se a qualcuno può non piacere indossarle, il proprio coniuge, un fratello o un amico potrebbe apprezzarle. Inoltre, il riconoscimento di tali ornamenti da parte della maggior parte delle altre tribù apre ulteriori prospettive di scambio.
@@ -85,34 +84,21 @@ Le perline di conchiglie, e più in generale le valute merce, fungono da registr
 
 Chi controlla dunque questo registro? In larga misura, la risposta è “la natura”. In termini pratici ciò significa che nessun essere umano o gruppo possiede il controllo centrale sul registro. La produzione di perline di conchiglie richiede infatti l’impiego di energia e tempo—eseguito correttamente con i materiali adatti—, rendendo impossibile qualsiasi tentativo di imbroglio. Alcuni partecipanti residenti lungo la costa potevano dedicare il loro tempo in eccesso alla realizzazione diretta di conchiglie, mentre altri, situati nell’entroterra, accumulavano risorse in surplus per poi scambiarne una parte e ottenere le perline. In entrambi i casi, le conchiglie rappresentavano una misura del tempo e delle risorse eccedenti, un indicatore di risparmio e valore, spesso connesso a rituali formali che ne accompagnavano il processo di produzione.
 
-[^21]: I riferimenti storici e le analisi quantitative riportati da Bowles et al. offrono un approfondimento significativo sulla trasmissione della ricchezza nelle società di cacciatori–raccoglitori.
-
 Per quanto riguarda il caso limite, la risposta a chi controlla il registro è semplice: colui che possiede la tecnologia più avanzata determina il funzionamento del sistema. Questo modello, basato su un registro di moneta merce, è efficace finché tutti i partecipanti mantengono capacità produttive abbastanza equilibrate, condizione che ha caratterizzato gran parte del mondo per migliaia di anni. Tuttavia, se una civiltà estremamente avanzata dovesse emergere da oltreoceano, dotata di strumenti metallici specializzati e in grado di comprendere il meccanismo del sistema di moneta basato sulle conchiglie, essa potrebbe produrre, per unità di lavoro, un numero di perle di conchiglia di un ordine di grandezza superiore rispetto a chiunque altro. Di conseguenza, inondando il mercato con queste conchiglie, potrebbe svalutare il valore di quelle altrui e accumulare enormi risorse, poiché alle tribù impiegherebbe tempo per rendersi conto di come questa nuova civiltà riesca a produrre conchiglie a un ritmo molto più rapido, facendo sì che tali perle diventino, nel corso di mesi o anni, progressivamente meno rare e meno preziose.
 
 Come vedremo nel prossimo capitolo, la storia della moneta merce è in realtà una narrazione del progresso tecnologico. Diverse forme di moneta merce funzionano efficacemente come sistemi di registro equi e trasparenti fino a quando la tecnologia non evolve al punto da conferire a un gruppo un vantaggio sproporzionato, costringendo tutti gli altri a dover necessariamente adattarsi o a soccombere.
 
-## Footnotes
-
 [^8]: Ignace Gelb, "Sumerian Language."
-
 [^9]: William Goetzmann, *Money Changes Everything: How Finance Made Civilization Possible*, 15–25.
 [^10]: Justin Pack, *Money and Thoughtlessness*, 51–70.
 [^11]: Vedi ad esempio Marcel Mauss, *The Gift*; Marshall Sahlins, *Stone Age Economics*; e Paul Einzig, *Primitive Money*.
 [^12]: Elise Berman, "Avoiding Sharing."
 [^13]: Paul Seabright, *The Company of Strangers: A Natural History of Economic Life*, 2–5, 91–105.
-
 [^14]: Eric Smith et al., *Wealth Transmission and Inequality Among Hunter-Gatherers*, 21.
-
 [^15]: Szabo, *Shelling Out*.
-
 [^16]: Dror Goldberg, *Famous Myths of 'Fiat Money'*, 962–963.
-
 [^17]: Marc Shell, *Wampum and the Origins of American Money*.
-
 [^18]: Bin Yang, *The Rise and Fall of the Cowrie Shell: The Asian Story*.
-
 [^19]: National Science Foundation, *Shell Beads from South African Cave Show Modern Human Behavior 75,000 Years Ago*.
-
 [^20]: Smith et al., *Wealth Transmission*, 21.
-
 [^21]: Smith et al., *Wealth Transmission*, 31.

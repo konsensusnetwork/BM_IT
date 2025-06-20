@@ -14,9 +14,9 @@ In pratica, tra gli asset scambiati in una società, uno o due dei più scarci, 
 
 Nel 1776, Adam Smith affrontò il tema dell’emergere del denaro come soluzione al problema del baratto nel suo *Wealth of Nations*. Pur essendo oggetto di critiche da parte dei teorici del credito, che contestano quell’esempio e la sequenza degli eventi legati al baratto in generale – argomentazioni che vengono analizzate in dettaglio nel Capitolo 4 di questo volume – la discussione di Smith ha alimentato la successiva focalizzazione sul denaro-merce da parte della scuola austriaca di economia, fondata da Carl Menger nel XIX secolo e ulteriormente sviluppata da Ludwig von Mises, Friedrich Hayek e altri studiosi.
 
-In questa prospettiva, il denaro ideale deve essere divisibile, trasportabile, durevole, fungibile, verificabile e scarso. Di norma (pur non in tutti i casi) esso possiede anche una certa utilità intrinseca. I vari tipi di denaro, infatti, possono essere valutati in base a questi parametri:  
-- Con "divisibilità" si intende la capacità del denaro di essere suddiviso in unità di dimensioni diverse, adeguate a transazioni di importo variabile.
+In questa prospettiva, il denaro ideale deve essere divisibile, trasportabile, durevole, fungibile, verificabile e scarso. Di norma (pur non in tutti i casi) esso possiede anche una certa utilità intrinseca. I vari tipi di denaro, infatti, possono essere valutati in base a questi parametri: 
 
+- Con "divisibilità" si intende la capacità del denaro di essere suddiviso in unità di dimensioni diverse, adeguate a transazioni di importo variabile.
 - Portabilità: il denaro deve essere facilmente trasportabile anche su lunghe distanze, il che implica che esso racchiuda una notevole quantità di valore in un formato compatto e di poco peso.
 - Durabilità: per essere efficace, il denaro deve poter essere conservato nel tempo senza deteriorarsi; non deve marcire, arrugginire o rompersi facilmente, garantendo così una protezione del suo valore.
 - Fungibilità: le unità costitutive del denaro devono essere sostanzialmente intercambiabili, ovvero ogni unità deve essere equivalente a qualsiasi altra, senza differenze sostanziali che ne compromettano l’utilità.
@@ -157,20 +157,20 @@ Nell'antica Babilonia lo shekel d'argento costituiva l'unità monetaria principa
 
 Il Codice di Hammurabi, che risale a quasi quattro mila anni fa, imponeva l'uso del grano come moneta legale:
 
-> 108. Se un venditore di vino non riceve in grano il prezzo di una bevanda, ma ottiene denaro tramite la "grande pietra" oppure riduce la misura della bevanda a favore del grano, verrà chiamato a rispondere e gettato in acqua.
+> 108: Se un venditore di vino non riceve in grano il prezzo di una bevanda, ma ottiene denaro tramite la "grande pietra" oppure riduce la misura della bevanda a favore del grano, verrà chiamato a rispondere e gettato in acqua.
 >
-> 111. Se un venditore di vino concede 60 KA di bevanda a credito, al momento del raccolto dovrà ottenere in compenso 50 KA di grano.
+> 111: Se un venditore di vino concede 60 KA di bevanda a credito, al momento del raccolto dovrà ottenere in compenso 50 KA di grano.
 >
-> 114. Se un uomo non possiede un debito in grano o denaro nei confronti di un altro e lo sequestra per il debito, per ogni sequestro dovrà corrispondere un terzo di mana d'argento.
+> 114: Se un uomo non possiede un debito in grano o denaro nei confronti di un altro e lo sequestra per il debito, per ogni sequestro dovrà corrispondere un terzo di mana d'argento.
 >
-> 115. Se un uomo detiene un debito in grano o denaro nei confronti di un altro e procede al sequestro, e il soggetto sequestrato muore nella casa di chi lo ha sequestrato, in tal caso non sussiste alcuna pena.[^47]
+> 115: Se un uomo detiene un debito in grano o denaro nei confronti di un altro e procede al sequestro, e il soggetto sequestrato muore nella casa di chi lo ha sequestrato, in tal caso non sussiste alcuna pena.[^47]
 
 La difficoltà nell'utilizzare un prodotto agricolo come denaro risiede nel fatto che l'offerta monetaria varia in modo considerevole nel corso dell'anno. Infatti, la stagione del raccolto genera un notevole afflusso di "denaro grano", mentre il resto dell'anno tale offerta si riduce man mano che il grano viene trasformato in pane e birra. Per far fronte alle esigenze di pagamento durante le stagioni di scarsità, gli agricoltori facevano spesso affidamento sul ricorso al credito, usando il fruttuoso raccolto per estinguere i debiti contratti nei periodi meno produttivi.
 
 In molte società come questa, un raccolto fallito poteva significare la rovina finanziaria del contadino. Il contadino e/o i membri della sua famiglia rischiavano di cadere nella condizione di schiavitù per debiti. Tuttavia, diversi sovrani, a intervalli periodici, concedevano l’amnistia sui debiti o introducevano dei limiti per i creditori, scusando il debitore per particolari eventi o riducendo la quantità di lavoro in servitù necessaria per saldare i debiti.
 
 > 48: Se un uomo ha un debito e una tempesta inonda il suo campo, portando via il raccolto, o se la scarsità d’acqua impedisce la crescita di grano, in quell’anno egli non dovrà consegnare alcuna parte del suo grano al creditore, dovrà modificare il contenuto del suo tavolo di contratto e non pagherà interessi per quell’anno.
-
+> 
 > 117: Se un uomo è indebitato e vende sua moglie, suo figlio o sua figlia, o li lega al servizio per tre anni, essi dovranno lavorare nella casa del compratore o del padrone; al quarto anno dovranno essere liberati.[^48]
 
 Babilonia rappresenta uno dei primi esempi noti in cui furono formalizzati sistemi di pesi e misure, il denaro merce, il credito scritto, i contratti di custodia e la moneta a corso legale. I re stabilivano le regole fondamentali del commercio e correggevano eventuali squilibri strutturali che emergessero durante il loro regno, mentre i templi fungevano da centri amministrativi all’interno dei quali si svolgeva il commercio formalizzato.
@@ -206,55 +206,31 @@ Questo caso studio (così come altri simili) costituisce, in sostanza, un esempi
 ## Footnotes
 
 [^22]: Carl Menger, "On the Origin of Money."
-
 [^23]: Nuno Palma, "The Real Effects of Monetary Expansions: Evidence from a Large-Scale Historical Experiment"; Saifedean Ammous, *The Bitcoin Standard: The Decentralized Alternative to Central Banking*, 28–29.  
 [^24]: Ammous, *The Bitcoin Standard: The Decentralized Alternative to Central Banking*, 27–28.  
 [^25]: World Gold Council, "Above-Ground Stock."  
 [^26]: Randy Korotev, "Meteorite Numbers in the United States, Canada, and Mexico," Washington University in St. Louis.  
 [^27]: Claire Priest, "Currency Policy and Legal Development in Colonial New England," *The Yale Law Journal*, 1324–26; Glyn Davies, *A History of Money: From Ancient Times to the Present Day*, 40–41.
-
 [^28]: Kristin Beuscher, "From Pasack to the Plains." *Northern Valley Press*, 21 maggio 2019.
-
 [^29]: Milton Friedman, "Understanding Inflation," 3:01–5:28.
-
 [^30]: Ron Mitchener, "Money in the American Colonies," *EH.net*.
-
 [^31]: Sharon Ann Murphy, *Other People's Money: How Banking Worked in the Early American Republic*.
-
 [^32]: Farley Grubb, "Colonial Virginia's Paper Money, 1755–1774"; Barry Eichengreen, *Exorbitant Privilege: The Rise and Fall of the Dollar and the Future of the International Monetary System*, 9–11.
-
 [^33]: Stefania Moramarco e Loreto Nemi, "Nutritional and Health Effects of Chocolate," 134–35.
-
 [^34]: Ingrid Fromm, "From Small Chocolatiers to Multinationals to Sustainable Sourcing: A Historic Review of the Swiss Chocolate Industry," 73.
-
 [^35]: Dudley Easby, "Early Metallurgy in the New World," 77.
-
 [^36]: Milton Friedman, *Monetary Mischief*, 3–7.
-
 [^37]: William Luther e Alexander Salter, "Synthesizing State and Spontaneous Order Theories of Money."
-
 [^38]: Friedman, *Monetary Mischief*, 4.
-
 [^39]: Mike Dash, "David O’Keefe: The King of Hard Currency," *Smithsonian Magazine*, 28 luglio 2011.
-
 [^40]: Dash, "O’Keefe."
-
 [^41]: David Jones, *Native North American Armor, Shields, and Fortification*, 41.
-
 [^42]: Emil Sandstedt, *Money Dethroned: A Historical Journey*, 43
-
 [^43]: Emil Sandstedt, “Racconti sul denaro morbido — Il sentiero delle perle”, *Medium*, 26 maggio 2019.
-
 [^44]: Laure Dussubieux et al., “Il commercio europeo in Malawi: le evidenze delle perle di vetro.”
-
 [^45]: Dazmin Daud, “Uno studio su due varianti della moneta da \$100 del Malaya durante l’invasione giapponese (campione n. M8A)”, 43.
-
 [^46]: Goetzmann, *Money Changes Everything*, pp. 59–69.
-
 [^47]: Hammurabi, *The Code of Hammurabi, King of Babylon*, pp. 37–39.
-
 [^48]: Hammurabi, *Code of Hammurabi*, 27, 41.
-
 [^49]: Gigi, *21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole.*
-
 [^50]: Gigi, "Bitcoin Is Digital Scarcity," DerGigi.com, 2 ottobre 2022. Vedi anche Solomon Stein, "The Origins of Money in *Diablo II*."

@@ -1,46 +1,57 @@
 % typographical packages
-\usepackage{microtype}
+%\usepackage{microtype}
 \usepackage{setspace}
-\tolerance=6000
-\hyphenpenalty=1000
+%\tolerance=1000
+%\hyphenpenalty=1000
 
 % typographical settings for the body text
-\setlength{\parskip}{0em}
-\setlength{\parindent}{1em}
-\linespread{1.3}
+% \usepackage{microtype}
+\DeclareMicrotypeAlias{stone-sans}{TU-basic}
+\DeclareMicrotypeAlias{stone-serif}{TU-basic}
+\raggedbottom
+
+\setlength{\parskip}{0em plus 0em minus 0em}
+%\setlength{\parindent}{1em}
+\linespread{1.1}
 
 % DEFINITIONS TITLE PAGE / COPYRIGHT
-\newcommand{\titleoriginal}{Title}
-\newcommand{\subtitleoriginal}{Subtitle}
-\newcommand{\yearoriginal}{Year}
-\newcommand{\subtitletranslation}{Translation Subtitle}
-\newcommand{\yeartranslation}{Translation Year}
-\newcommand{\stringtranslation}{Translation String}
-\newcommand{\stringlicense}{Translation License String.}
-\newcommand{\stringpublisher}{Published by String}
-\newcommand{\ISBNHC}{978-9916-}
-\newcommand{\ISBNSC}{978-9916-}
-\newcommand{\ISBNEBOOK}{978-9916-}
-%\newcommand{\ISBNAUDIO}{978-9916-}
+\newcommand{\titleoriginal}{Broken Money}
+\newcommand{\subtitleoriginal}{Why Our Financial System is Failing Us and How We Can Make it Better}
+\newcommand{\yearoriginal}{2023}
+\newcommand{\subtitletranslation}{XXX}
+\newcommand{\yeartranslation}{2025}
+\newcommand{\stringtranslation}{Traduzione}
+\newcommand{\stringlicense}{Tutti i diritti riservati.}
+\newcommand{\stringpublisher}{Pubblicato da}
+\newcommand{\ISBNHC}{XXX}
+\newcommand{\ISBNSC}{XXX}
+\newcommand{\ISBNEBOOK}{XXX}
+\newcommand{\ISBNAUDIO}{XXX}
 \newcommand{\press}{Konsensus Network}
-\newcommand{\translatorone}{Translator 1}
+\newcommand{\translatorone}{XXX}
+\newcommand{\translatortwo}{XXX}
 \newcommand{\translators}{
-\large\textit{\stringtranslation:}\\
-\translatorone\\
+\Large\sffamily\textbf{\stringtranslation:}\\
+\textit\translatorone\\
+\textit\translatortwo\\
+}
+\newcommand{\editors}{
+  \Large\sffamily\textbf{Redactie:}\\
+  \textit{Theo Hague}
 }
 
 % PHYSICAL DOCUMENT SETUP
-\setstocksize{210mm}{148mm}
-\settrimmedsize{210mm}{148mm}{*}
-\setbinding{5mm}
-\setlrmarginsandblock{8mm}{15mm}{*}
-\setulmarginsandblock{25mm}{26mm}{*}
+\setstocksize{230mm}{155mm}
+\settrimmedsize{224mm}{149mm}{*}
+\setbinding{7mm}
+\setlrmarginsandblock{15mm}{18mm}{*}
+\setulmarginsandblock{20mm}{18mm}{*}
 
 % FONTS
 \usepackage{fontspec}
 \setmainfont{stone-serif}[
     Path=./fonts/stone-serif-itc-pro/,
-    Scale=0.86,
+    Scale=0.90,
     Extension=.OTF,
     UprightFont=*-Regular,
     BoldFont=*-SemiBd,
@@ -50,7 +61,7 @@
 
 \setsansfont{stone-sans}[
     Path=./fonts/stone-sans/,
-    Scale=0.82,
+    Scale=0.85,
     Extension=.otf,
     UprightFont=*-Medium,
     BoldFont=*-Semibold,
@@ -58,24 +69,60 @@
     BoldItalicFont=*-SemiBoldItalic
     ]
 
+\setmonofont{Consolas}
+
+% Define a new font family for chapter headings using XeLaTeX and fontspec.
+\newfontfamily\chapterfont{Portmanteau-Regular}[
+    Path=./fonts/,
+    Scale=0.8,
+    Extension=.otf,
+]
+
+\newfontfamily\quotefont{stone-sans-Regular}[
+    Path=./fonts/stone-sans/,
+    Scale=0.85,
+    Extension=.ttf,
+]
+
+\newfontfamily\titlefont{delight-bold}[
+    Path=./fonts/,
+    Scale=0.85,
+    Extension=.otf,
+]
+
+% Define YUGE
+\newcommand{\YUGE}{\fontsize{36pt}{43pt}\selectfont}
+\newcommand{\Yuge}{\fontsize{30pt}{36pt}\selectfont}
+\newcommand{\yuge}{\fontsize{27pt}{32pt}\selectfont}
+
+% Lettrine chapter opening global settings
 \usepackage{lettrine}
-\setcounter{DefaultLines}{3}
+\setcounter{DefaultLines}{2}
 \renewcommand{\DefaultLoversize}{0.1}
 \renewcommand{\DefaultLraise}{0}
 \renewcommand{\LettrineTextFont}{}
 \setlength{\DefaultFindent}{\fontdimen2\font}
 \setlength{\DefaultNindent}{0em}
 
-%\usepackage[footskip=8mm]{geometry}
+% Endnotes
+\usepackage{enotez}
+% \let\footnote=\endnote
+% \let\footnotemark=\endnotemark
+% \let\footnotetext=\endnotetext
+\setenotez{
+  list-name={Eindnoten},
+  reset=true,
+  backref=true,
+}
 
 % custom second title page
 \makeatletter
-\newcommand*\halftitlepage{\begingroup % Misericords, T&H p 153
+\newcommand*\halftitlepage{\begingroup
   \setlength\drop{0.1\textheight}
   \begin{center}
   \vspace*{\drop}
   \rule{\textwidth}{0in}\par
-  {\Large\sffamily\thetitle\par}
+  {\Yuge\titlefont\MakeUppercase{\thetitle}\par}
   \rule{\textwidth}{0in}\par
   \vfill
   \end{center}
@@ -89,17 +136,21 @@
   \setlength\drop{0.15\textheight}
   \begin{center}
   \vspace*{\drop}
-  {\huge\sffamily\thetitle\par}
-  \vspace{2em}
-  %{\normalsize\sffamily\textit\subtitletranslation\par}
-  %\vspace{2em}
-  \rule{5.5cm}{0.3mm}\par
-  \vspace{2em}
-  {\Large\sffamily\textit\theauthor\par}
+  {\Huge\sffamily\MakeUppercase{\theauthor}\par}
   \vspace{3em}
-  %{\footnotesize\sffamily\textit\translators\par}
+  {\YUGE\titlefont\MakeUppercase{\thetitle\par}}
+  \vspace{8em}
+  \begin{minipage}{0.8\textwidth}
+    {\LARGE\centering\sffamily\textit\subtitletranslation\par}
+  \end{minipage}
+  \par
+  % \rule{5.5cm}{0.3mm}\par
+  \vspace{12em}
+  {\footnotesize\translators\par}
+  \vspace{2em}
+  {\footnotesize\editors\par}
   \vfill
-  \includegraphics[width=3.5cm]{figures/knw.png}\par
+  % \includegraphics[width=3.5cm]{figures/knw.png}\par
   \end{center}
 \endgroup}
 \makeatother
@@ -110,27 +161,32 @@
   \setlength\drop{0.1\textheight}
   \vphantom{just for the drop}
   \vfill
-  \begin{scriptsize}
+  \begin{footnotesize}
   \noindent \copyright\space \yearoriginal: \theauthor
-  \par\noindent \textit{\titleoriginal}
+  \par\noindent \textit{\titleoriginal: \subtitleoriginal}
   \vspace{0.5\baselineskip}
-  %\par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone
-  %\par\noindent \textit{\thetitle: \subtitletranslation}
+  \par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone, \space \translatortwo
+  \par\noindent \textit{\thetitle: \subtitletranslation}
   \vspace{\baselineskip}
   \par\noindent \textit{\stringlicense}
   \vspace{0.5\baselineskip}
   \par\noindent \stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
   \vspace{0.5\baselineskip}
-  \par\noindent v1.0.0
+  \par\noindent Impaginazione: Theo Hague
+  \vspace{0.5\baselineskip}
+  \par\noindent Design di copertina: Imtechnicolor
+  \vspace{0.5\baselineskip}
+  \par\noindent Prima edizione: maggio 2025
   \vspace{0.5\baselineskip}
   \setlength{\parindent}{2em}% default 20pt
   \par\noindent ISBN \ISBNHC \:Hardcover
   \par\hspace{0.28\parindent}\ISBNSC \:Paperback
   \par\hspace{0.28\parindent}\ISBNEBOOK \:E-book\par
   \setlength{\parindent}{0pt}
-  \end{scriptsize}
+  \end{footnotesize}
   \vspace{3em}
-  \par\noindent \href{https://konsensus.network}{\large\MakeUppercase \press \hspace{3em} \includegraphics[width=1cm]{figures/freestarfish.png}}
+  % \par\noindent \href{https://konsensus.network}{\large\MakeUppercase \press \hspace{3em} \includegraphics[width=1cm]{figures/freestarfish.png}}
+  \includegraphics[width=3.5cm]{figures/knw.png}\par
   \setcounter{footnote}{0}
   \clearpage
 \endgroup}
@@ -139,10 +195,10 @@
 % HEADER AND FOOTER MANIPULATION
 % for normal pages
 \nouppercaseheads
-\headsep = 10mm
+\headsep = 6mm
 \makepagestyle{mystyle} 
-\makeevenhead{mystyle}{\scriptsize\sffamily\mdseries\thepage}{}{}
-\makeoddhead{mystyle}{{\scriptsize\sffamily\mdseries\leftmark}}{}{\scriptsize\sffamily\mdseries\thepage}
+\makeevenhead{mystyle}{\footnotesize\sffamily\thepage}{}{}
+\makeoddhead{mystyle}{{\footnotesize\sffamily\leftmark}}{}{\footnotesize\sffamily\thepage}
 \makeevenfoot{mystyle}{}{}{}
 \makeoddfoot{mystyle}{}{}{}
 \makeatletter
@@ -151,33 +207,36 @@
 \makepagestyle{plain}
 \makerunningwidth{plain}{\headwidth}
 \makeevenfoot{plain}{}{}{}
-\makeoddfoot{plain}{}{\scriptsize\sffamily\mdseries\thepage}{}
+\makeoddfoot{plain}{}{}{}
 \pagestyle{mystyle}
 
-\newif\ifmainmatter
-\appto\mainmatter{\mainmattertrue}
-\appto\backmatter{\mainmatterfalse}
-\appto\appendix{\mainmatterfalse}
+% \newif\ifmainmatter
+% \appto\mainmatter{\mainmattertrue}
+% \appto\backmatter{\mainmatterfalse}
+% \appto\appendix{\mainmatterfalse}
 
-\renewcommand\chaptermark[1]{%
-  \markboth{\MakeUppercase{%
-    \ifmainmatter~\oldstylenums\thechapter.~\fi#1}}{}}%
+% \renewcommand\chaptermark[1]{%
+%   \markboth{\MakeUppercase{%
+%     \ifmainmatter~\oldstylenums\thechapter.~\fi#1}}{}}%
 
 % TOC
 \usepackage[]{tocloft}
 \renewcommand{\cftsectiondotsep}{\cftnodots}
 \renewcommand{\cftpartfont}{\Large\sffamily\MakeUppercase}
-\renewcommand{\cftchapterfont}{\small\sffamily}
+\renewcommand{\cftchapterfont}{\normalsize\sffamily}
 \renewcommand{\cftsectionfont}{\Small\sffamily}
 \renewcommand{\cftpartpagefont}{\Large\sffamily}
 \renewcommand{\cftchapterpagefont}{\small}
-\renewcommand{\cftchapterpresnum}{HOOFDSTUK\space}
-\renewcommand{\cftchapternumwidth}{7em}
+\renewcommand{\cftchapterpresnum}{CAPITOLO\space}
+\renewcommand{\cftchapternumwidth}{8em}
 \setlength{\cftchapterindent}{0em}
-\setlength{\cftsectionindent}{7em}
-\setlength{\cftbeforechapterskip}{-0.2em}
+\setlength{\cftsectionindent}{8em}
+\setlength{\cftbeforechapterskip}{0.4em}
 \setsecnumdepth{chapter}
 \setcounter{tocdepth}{0}
+
+%% Some spacing between the last chapter and the backmatter
+\pretocmd{\backmatter}{\addtocontents{toc}{\vspace{2em}}}{}{}
 
 
 % Redefine footnote presentation
@@ -196,31 +255,60 @@
 \usepackage{chngcntr}
 \counterwithout*{footnote}{chapter}
 
+% CAPTIONS
+\usepackage[format=plain,labelsep=newline,font=small,labelfont={bf,sf},singlelinecheck=false]{caption}
+
 % TITLE FORMATTING
 \usepackage{titlesec}
+\titleclass{\part}{top}
+\titleformat{\part}[display]
+  {\sffamily\Huge}
+  {\chapterfont\centering\partname\ \thepart}
+  {2em}
+  {\HUGE\centering\uppercase}
+%\titlespacing*{\part}{0pt}{50pt}{40pt}
+
 \titleformat
     {\chapter}[display]
     {\huge\sffamily}
-    {\Large\sffamily\chaptertitlename\space\thechapter}
-    {0pt}
-    {\vspace{28pt}}
+    {\huge\sffamily\chaptertitlename\space\thechapter}
+    {1em}
+    {}
 
 \titleformat
-  {\section}[block]
-  {\sffamily\large\bfseries}
-  {}
-  {0pt}
-  {}
+{\section}[block]
+{\sffamily\Large}
+{}
+{0pt}
+{\uppercase}
   
 \titlespacing*{\section}{0pt}{2em}{0.5em}
 
-\titleformat{\subsection}{\sffamily\bfseries}{}{}{}
-\titlespacing*{\subsection}{0pt}{2em}{0em}
+\titleformat{\subsection}{\sffamily\large\bfseries}{}{}{\uppercase}
+%\titlespacing*{\subsection}{0pt}{2em}{0em}
+
+\makeatletter
+\renewcommand*{\@makechapterhead}[1]{%
+  %\linespread{1.3}
+  \vspace*{-4cm} % Adjust vertical spacing before the image
+  \begin{center}
+    \setSpacing{1.3}
+    \includegraphics[width=\textwidth]{figures/circuitboard.png}
+    \par\vspace{3\baselineskip} % Add reliable spacing after the image
+    {\LARGE\chapterfont Hoofdstuk \thechapter} 
+    \par\vspace{1\baselineskip} % Space before chapter number
+    {\huge\sffamily\MakeUppercase{#1}} % Chapter title formatting
+    \par\vspace{1\baselineskip} % Space after chapter number
+  \end{center}
+  \vspace{2\baselineskip} % Space after the chapter title
+}
+\makeatother
+
 
 % QUOTE FORMATTING
 \renewenvironment{quote}%
-               {\list{}{\rightmargin=.6cm\leftmargin=.6cm}%
-                \itshape \item[]}% <- The effect of \samepage is local!!!
+               {\list{}{\rightmargin=1.5em\leftmargin=1.5em\topsep=1.5em\itemindent=0em}%
+                 \small \item[]\relax}% <- The effect of \samepage is local!!!
                {\endlist}
 
 % LAYOUT CHECK AND FIX

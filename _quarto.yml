@@ -58,28 +58,51 @@ book:
     site: "@konsensusn"
   chapters:
     - index.qmd
-    - chapters/ch01_20250305_2120_o3-mini.qmd
     - chapters/ch01_20250306_1219_o3-mini.qmd
-    - chapters/ch02_20250306_1220_o3-mini.qmd
     - chapters/ch02_20250306_1253_o3-mini.qmd
-    - chapters/ch03_20250306_1222_o3-mini.qmd
     - chapters/ch03_20250306_1256_o3-mini.qmd
-    - chapters/ch04_20250306_1238_o3-mini.qmd
     - chapters/ch04_20250306_1304_o3-mini.qmd
-    - chapters/ch05_20250306_1243_o3-mini.qmd
     - chapters/ch05_20250306_1308_o3-mini.qmd
-    - chapters/ch06_20250306_1249_o3-mini.qmd
     - chapters/ch06_20250306_1348_o3-mini.qmd
     - chapters/ch07_20250306_1349_o3-mini.qmd
     - chapters/ch08_20250306_1356_o3-mini.qmd
     - chapters/ch09_20250306_1401_o3-mini.qmd
     - chapters/ch10_20250306_1407_o3-mini.qmd
+    - chapters/ch11_20250619_1005_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch12_20250619_1006_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch13_20250619_1012_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch14_20250619_1023_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch15_20250619_1043_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch16_20250619_1051_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch17_20250619_1122_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch18_20250619_1123_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch19_20250619_1130_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch20_20250619_1159_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch21_20250619_1220_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch22_20250619_1227_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch23_20250619_1233_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch24_20250619_1258_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch25_20250619_1311_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch26_20250619_1329_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch27_20250619_1338_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch28_20250619_1346_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch29_20250619_1406_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch30_20250619_1429_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch31_20250619_1441_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch32_20250619_1452_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch33_20250619_1453_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch34_20250619_1513_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch35_20250619_1522_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch36_20250619_1534_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch37_20250619_1628_gemini-2_5-pro-preview-06-05.qmd
+    - chapters/ch38_20250619_1634_gemini-2_5-pro-preview-06-05.qmd
 
 format:
   html:
     lang: it
     theme:
-      light: [flatly, theme.scss, theme-light.scss]
+      light: [lux, theme.scss, theme-light.scss]
+      dark: [lux, theme.scss, theme-dark.scss]
     number-depth: 2
     grid:
       sidebar-width: 500px
@@ -113,7 +136,4 @@ format:
     number-depth: 2
   docx:
     toc-depth: 1
-    toc-title: Inhoudsopgave
     lang: "it-IT"
-    css: docx.css
-    number-depth: 2
